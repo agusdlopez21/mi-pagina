@@ -782,7 +782,7 @@ footer h3 a {
     .proyectos {
         position: relative;
         align-items: baseline;
-        height: 28rem;
+        height: 30rem;
     }
 
     .proyectos h4 {
@@ -819,7 +819,7 @@ footer h3 a {
 
     .btn-ver-proyectos {
         position: absolute;
-        top: 12rem;
+        top: 15rem;
         left: 21rem;
     }
 
@@ -858,8 +858,12 @@ footer h3 a {
         width: 30rem;
     }
 
+    .galeria h2 {
+        text-align: center;
+    }
+
     .row {
-        width: 60rem;
+        width: 40rem;
     }
 
     /* seccion descrpcion */
