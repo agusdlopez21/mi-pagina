@@ -687,7 +687,7 @@ footer h3 a {
 }
 
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1024px) {
     /* PAGINA INDEX */
     /* contenedor de la home */
     .home {
