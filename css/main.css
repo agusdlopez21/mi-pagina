@@ -556,7 +556,7 @@
       text-decoration: none;
       color: #9acd32; }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   /* PAGINA INDEX */
   /* contenedor de la home */
   .home {
