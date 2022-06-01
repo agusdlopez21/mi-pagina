@@ -666,14 +666,14 @@
   .pagina-sobre-mi .galeria h2 {
     text-align: center; }
   .pagina-sobre-mi .galeria div {
-    margin-left: .1rem;
-    width: 100%; }
+    margin-left: .2rem;
+    width: 90%; }
     .pagina-sobre-mi .galeria div .img1-2 {
-      width: 28rem; }
+      width: 25rem; }
     .pagina-sobre-mi .galeria div .img3-4 {
-      width: 28rem; }
+      width: 25rem; }
     .pagina-sobre-mi .galeria div .img5-6 {
-      width: 28rem; }
+      width: 25rem; }
   /* ------  HTML EXPERIENCIA ------ */
   .html-experiencia {
     /* seccion exp1 */
@@ -726,65 +726,72 @@
     .html-experiencia .redes-exp {
       margin-top: 2rem; }
   /* PAGINA PROYECTO */
-  .titulo-proyecto {
+  .pagina-proyectos main h1 {
     top: 18rem;
     left: 38rem; }
-  .p-proyecto {
+  .pagina-proyectos main p {
     top: 28rem;
     left: 29rem;
-    width: 30rem; }
-  /* seccion Proyecto importante */
-  .p-importantes {
+    width: 30rem;
+    text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8); }
+  .pagina-proyectos .p-importantes {
     align-items: baseline;
     position: relative;
     height: 24rem; }
-  .p-importantes h2 {
-    margin-top: 2rem;
-    margin-left: 5rem; }
-  .p-importantes p {
-    position: absolute;
-    top: 8rem;
-    left: 8rem;
-    width: 30rem; }
-  .img-proyectos-importantes {
-    position: absolute;
-    right: 5rem;
-    width: 30rem; }
-  .btn-proyectos-importantes {
-    top: 14rem;
-    left: 8rem;
-    position: absolute; }
+    .pagina-proyectos .p-importantes h2 {
+      margin-top: 2rem;
+      margin-left: 5rem; }
+    .pagina-proyectos .p-importantes p {
+      position: absolute;
+      top: 8rem;
+      left: 8rem;
+      width: 30rem; }
+    .pagina-proyectos .p-importantes .img-proyectos-importantes {
+      position: absolute;
+      right: 5rem;
+      width: 30rem; }
+    .pagina-proyectos .p-importantes .btn-proyectos-importantes {
+      top: 14rem;
+      left: 8rem;
+      position: absolute; }
+  .pagina-proyectos .otros-proyectos .imp1 {
+    gap: 1rem; }
+  .pagina-proyectos .otros-proyectos .imp2 {
+    gap: 1rem; }
   /* ------  HTML CONTACTO ------ */
-  .pagina-contacto main h1 {
-    top: 18rem;
-    left: 38rem; }
-  .btn-container-contacto {
-    top: 28rem;
-    left: 41rem; }
-  /* seccion social */
-  .section-social h2 {
-    margin-top: 4rem; }
-  .redes1 {
-    margin-top: 1rem; }
-  .redes2 {
-    margin-top: 1rem; }
-  .bi-instagram {
-    font-size: xx-large;
-    margin: 1rem; }
-  .bi-linkedin {
-    font-size: xx-large;
-    margin: 1rem; }
-  .bi-github {
-    font-size: xx-large;
-    margin: 1rem; }
-  .bi-twitter {
-    font-size: xx-large;
-    margin: 1rem; }
-  .bi-facebook {
-    font-size: xx-large;
-    margin: 1rem; }
-  /* seccion formulario */
-  .btn-enviar {
-    border: 2px solid #9acd32;
-    width: 6rem;
-    background-color: #9acd32; } }
+  .pagina-contacto {
+    /* seccion social */
+    /* seccion formulario */ }
+    .pagina-contacto main h1 {
+      top: 18rem;
+      left: 38rem; }
+    .pagina-contacto main div img {
+      height: 52rem; }
+    .pagina-contacto main .btn-container-contacto {
+      top: 28rem;
+      left: 41rem; }
+    .pagina-contacto .section-social h2 {
+      margin-top: 4rem; }
+    .pagina-contacto .section-social .redes1 {
+      margin-top: 1rem; }
+      .pagina-contacto .section-social .redes1 .bi-instagram {
+        font-size: xx-large;
+        margin: 1rem; }
+      .pagina-contacto .section-social .redes1 .bi-github {
+        font-size: xx-large;
+        margin: 1rem; }
+      .pagina-contacto .section-social .redes1 .bi-twitter {
+        font-size: xx-large;
+        margin: 1rem; }
+    .pagina-contacto .section-social .redes2 {
+      margin-top: 1rem; }
+      .pagina-contacto .section-social .redes2 .bi-linkedin {
+        font-size: xx-large;
+        margin: 1rem; }
+      .pagina-contacto .section-social .redes2 .bi-facebook {
+        font-size: xx-large;
+        margin: 1rem; }
+    .pagina-contacto .btn-enviar {
+      border: 2px solid #9acd32;
+      width: 6rem;
+      background-color: #9acd32; } }
