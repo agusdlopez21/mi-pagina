@@ -1,0 +1,1195 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'M PLUS Code Latin', sans-serif;
+}
+// mobile first 480px
+/* ESTILO DE LA PAGINA INDEX */
+.home {
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "part1 part1"
+    "part2 part2"
+    "part3 part3"
+    "part4 part4"
+    "part5 part5"
+    "footer footer";
+    // header */
+    header { 
+        grid-area: header;
+        .navbar-brand h2 {      /* global */
+        font-weight: bold;
+        }
+    }
+    // main */
+    main {
+        grid-area: main;
+        div {
+             position: relative;
+             .p-principal {
+                position: absolute;
+                top: 30%;
+                left: 8rem;
+                font-style: italic;
+                color: white;
+                z-index: 1;
+                text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+            }
+            h1 {
+                position: absolute;
+                top: 45%;
+                left: 8.5rem;
+                color: white;
+                z-index: 1;
+                text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+            }
+            .p2-principal {
+                position: absolute;
+                top: 65%;
+                left: 1.3rem;
+                font-style: italic;
+                color: white;
+                z-index: 1;
+                text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+            }
+            //pasar un archivo exterior que sea global
+            div {
+                .img-principal {        /* global */
+                    width: 100%;
+                }    
+            }
+            .btn-container {
+                position: absolute;
+                top: 80%;
+                left: 7.5rem;
+                border: 2px solid yellowgreen; // gobal
+                background-color: #9acd32; // gobal
+                color: #9acd32; // gobal
+                a {
+                    font-weight: bold;
+                }
+            }
+            .btn-container2 {
+                display: none;
+            }
+        }
+        
+    }
+    // Seccion sobre mi */
+    .sobre-mi {
+        grid-area: part1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+        h4 {
+            font-weight: bold;
+            margin-bottom: 1rem;
+            span {
+                color: yellowgreen;
+            }
+        }
+        p {
+            width: 25rem;
+        }
+        div {
+            margin-top: 1rem;
+            display: flex;
+        }
+        div {
+            img {
+                width: 16rem;
+                border-radius: 10rem;
+                box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.181);
+            }
+        }
+    
+    }    
+    // seccion experiencia */
+    .experiencia {
+        grid-area: part2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h4 {
+            font-weight: bold; // se repite
+            span {
+                color: yellowgreen; // se repite
+            }
+        }
+        p {
+            margin-top: 1rem;
+        }
+        ul {
+            width: 25rem;
+        }
+    }
+    // seccion proyectos */
+    .proyectos {
+        grid-area: part3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h4 {
+            font-weight: bold;
+        }
+        .carousel {
+            width: 25rem;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+            .d-block {
+                height: 19rem;
+                width: auto;
+            }
+        }
+        h5 {
+            font-weight: bold; // se repite
+            margin-left: 1.5rem;
+            span {
+                color: yellowgreen; // se repite
+            }
+        }
+        p {
+            margin-top: 1rem;
+            width: 25rem;
+        }
+        .btn-ver-proyectos {
+            border: 2px solid yellowgreen;
+        }
+        .btn-ver-mas-proyectos {
+            display: none;
+        }
+        .btn:hover { // poner a parte
+            background-color: yellowgreen;
+        }
+    }
+    // seccion contactame */
+    .contactame {
+        grid-area: part4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h4 {
+            font-weight: bold;
+            span {
+                color: yellowgreen;
+            }
+        }
+        h5 {
+            color: yellowgreen;
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+        p {
+            width: 25rem;
+        }
+        .btn-contactame {
+            border: 2px solid #9acd32;
+            margin-top: 1rem;
+        }
+    }
+    // seccion redes sociales */ 
+   
+    .redes-sociales { /* global */
+        grid-area: part5;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 2rem;
+        .bi-github {
+            font-size: x-large;
+            width: 2rem;
+            height: 2rem;
+            color: yellowgreen;
+        }
+    
+        .bi-twitter {
+            font-size: x-large;
+            width: 2rem;
+            height: 2rem;
+            color: yellowgreen;
+        }
+    
+        .bi-facebook {
+            font-size: x-large;
+            width: 2rem;
+            height: 2rem;
+            color: yellowgreen;
+        }
+    
+        .bi-linkedin {
+            font-size: x-large;
+            width: 2rem;
+            height: 2rem;
+            color: yellowgreen;
+        }
+    
+        .bi-instagram {
+            font-size: x-large;
+            width: 2rem;
+            height: 2rem;
+            color: yellowgreen;
+        }
+    }
+    // footer */        
+    footer {/* global */
+        grid-area: footer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 7rem;
+        h3 {
+            font-weight: bold;
+        }
+        h3 {
+            a {
+                text-decoration: none;
+                color: #9acd32;
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+/* ------  HTML SOBRE MI ------ */
+.pagina-sobre-mi {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "p1 p1"
+    "img img"
+    "redes redes"
+    "footer footer";
+    width: 100%;
+    // seccion header */
+    header {
+        grid-area: header;
+    }
+    // seccion main */
+    main {
+        grid-area: main;
+        h1 {
+            position: absolute;
+            color: white;
+            top: 8rem;
+            left: 12rem;
+            z-index: 1;
+            text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+        }
+        p {
+            position: absolute;
+            color: white;
+            top: 12rem;
+            left: 2rem;
+            width: 25rem;
+            z-index: 1;
+            text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+        }
+        div {
+            .img-principal {        /* global */
+                width: 100%;
+            }    
+        }
+    }
+    // seccion descrpcion */
+    .descripcion {
+        grid-area: p1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p {
+            margin-top: 1rem;
+            width: 25rem;
+        }
+        
+    }
+    // seccion galeria */
+    .galeria {
+        grid-area: img;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        div {
+            width: 30rem;
+        }
+    }
+    // seccion redes sociales */ 
+   
+    .redes-sociales { /* global */
+        grid-area: redes;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 2rem;
+        .bi-github {
+            font-size: x-large;
+            width: 2rem;
+            height: 2rem;
+            color: yellowgreen;
+        }
+    
+        .bi-twitter {
+            font-size: x-large;
+            width: 2rem;
+            height: 2rem;
+            color: yellowgreen;
+        }
+    
+        .bi-facebook {
+            font-size: x-large;
+            width: 2rem;
+            height: 2rem;
+            color: yellowgreen;
+        }
+    
+        .bi-linkedin {
+            font-size: x-large;
+            width: 2rem;
+            height: 2rem;
+            color: yellowgreen;
+        }
+    
+        .bi-instagram {
+            font-size: x-large;
+            width: 2rem;
+            height: 2rem;
+            color: yellowgreen;
+        }
+    }
+    // footer */        
+    footer {/* global */
+        grid-area: footer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 7rem;
+        h3 {
+            font-weight: bold;
+        }
+        h3 {
+            a {
+                text-decoration: none;
+                color: #9acd32;
+            }
+        }
+    }
+}
+
+
+
+/* ------  HTML EXPERIENCIA ------ */
+.html-experiencia {
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "exp1 exp1"
+    "exp2 exp2"
+    "redes redes"
+    "foot foot";
+    // seccion header */
+    header {
+        grid-area: header;
+    }
+    // main */
+    main {
+        grid-area: main;
+        h1 {
+            position: absolute;
+            top: 6rem;
+            left: 10rem;
+            z-index: 1;
+            color: whitesmoke;
+            text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+        }
+        p {
+            position: absolute;
+            top: 10rem;
+            left: 2.5rem;
+            width: 25rem;
+            color: whitesmoke;
+            font-style: oblique;
+            z-index: 1;
+            text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+        }
+        div {
+            .img-principal {        /* global */
+                width: 100%;
+            }    
+        }
+    }
+    // seccion exp1 */
+    .experiencia-Uno {
+            grid-area: exp1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            h2 {
+                margin-bottom: 1rem;
+            }
+            p {
+                margin-top: 21rem;
+                width: 25rem;
+            }
+            div {
+                img {
+                    width: 25rem;
+                    top: 4rem;
+                    left: 3rem;
+                    position: absolute;
+                }
+        }
+        
+    }
+    // seccion exp2 */
+    .experiencia-Dos {
+            grid-area: exp2;
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            h2 {
+                margin-bottom: 1rem;
+            }
+            p {
+                margin-top: 21rem;
+                width: 25rem;
+            }
+            div {
+                img {
+                    width: 25rem;
+                    top: 4rem;
+                    left: 3rem;
+                    position: absolute;
+                }
+            }
+    }   
+    // seccion redes sociales */ 
+   
+    .redes-sociales { /* global */
+        grid-area: redes;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 2rem;
+        .bi-github {
+            font-size: x-large;
+            width: 2rem;
+            height: 2rem;
+            color: yellowgreen;
+        }
+    
+        .bi-twitter {
+            font-size: x-large;
+            width: 2rem;
+            height: 2rem;
+            color: yellowgreen;
+        }
+    
+        .bi-facebook {
+            font-size: x-large;
+            width: 2rem;
+            height: 2rem;
+            color: yellowgreen;
+        }
+    
+        .bi-linkedin {
+            font-size: x-large;
+            width: 2rem;
+            height: 2rem;
+            color: yellowgreen;
+        }
+    
+        .bi-instagram {
+            font-size: x-large;
+            width: 2rem;
+            height: 2rem;
+            color: yellowgreen;
+        }
+    }
+    // footer */        
+    footer {/* global */
+        grid-area: foot;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 7rem;
+        h3 {
+            font-weight: bold;
+        }
+        h3 {
+            a {
+                text-decoration: none;
+                color: #9acd32;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+/* ------------ PAGINA PROYECTO -------------- */
+.pagina-proyectos {
+    width: 100%;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "part1 part1"
+    "part2 part2"
+    "redes redes"
+    "footer footer";
+    /* seccion haeader */
+    header {
+        grid-area: header;
+        .navbar-brand h2 {      /* global */
+            font-weight: bold;
+            }
+    }
+    main {
+        grid-area: main;
+        h1 {
+            position: absolute;
+            top: 8rem;
+            left: 10rem;
+            z-index: 1;
+            color: whitesmoke;
+            text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+        }
+        p {
+            position: absolute;
+            top: 13rem;
+            left: 2rem;
+            width: 25rem;
+            z-index: 1;
+            color: whitesmoke;
+            text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+        }
+        div {
+            img {
+                width: 100%;
+            }
+        }
+    }
+// seccion Proyecto importante */
+    .p-importantes {
+        grid-area: part1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2 {
+            margin-top: 2rem;
+            font-weight: bold;
+            span {
+                color: #9acd32;
+            }
+        }
+        p {
+            margin-top: 1rem;
+            width: 25rem;
+        }
+        div {
+            img {   
+                border: 1px solid;
+            }
+        }
+        div {
+            a {
+                border: 2px solid #9acd32;
+                margin-top: 1rem;
+            }
+        }
+    }
+//  seccion otros-proyectos */
+    .otros-proyectos {
+       grid-area: part2;
+       display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2 {
+            font-weight: bold;
+            margin-top: 4rem;
+            span {
+                color: #9acd32;
+            }
+        }
+        h3 {
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+        div {
+            .imp1 {
+                display: flex;
+                flex-flow:wrap ;
+                justify-content: center;
+                margin-top: 1rem;
+            }            
+        }
+        div {
+            .imp2 {
+                display: flex;
+                flex-flow:wrap ;
+                justify-content: center;
+                margin-top: 1rem;
+            }            
+        }
+        .btn-otros-proyectos {
+            .btn {
+                width: 10rem;
+                border: 2px solid #9acd32;
+                margin-top: 2rem;
+                margin-bottom: 5rem;  
+            }
+        }
+    }
+    // seccion redes sociales */ 
+   
+    .redes-sociales { /* global */
+        grid-area: redes;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 2rem;
+        .bi-github {
+            font-size: x-large;
+            width: 2rem;
+            height: 2rem;
+            color: yellowgreen;
+        }
+    
+        .bi-twitter {
+            font-size: x-large;
+            width: 2rem;
+            height: 2rem;
+            color: yellowgreen;
+        }
+    
+        .bi-facebook {
+            font-size: x-large;
+            width: 2rem;
+            height: 2rem;
+            color: yellowgreen;
+        }
+    
+        .bi-linkedin {
+            font-size: x-large;
+            width: 2rem;
+            height: 2rem;
+            color: yellowgreen;
+        }
+    
+        .bi-instagram {
+            font-size: x-large;
+            width: 2rem;
+            height: 2rem;
+            color: yellowgreen;
+        }
+    }
+    .redes-sociales { // global
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 2rem;
+    }
+    // footer */        
+    footer {/* global */
+        grid-area: footer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 7rem;
+        h3 {
+            font-weight: bold;
+        }
+        h3 {
+            a {
+                text-decoration: none;
+                color: #9acd32;
+            }
+        }
+    }
+
+}
+
+/* ------  HTML CONTACTO ------ */
+.pagina-contacto {
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "social formulario"
+    "social formulario"
+    "footer footer";
+
+    // seccion header */
+    header {
+        grid-area: header;
+        .navbar-brand h2 {      /* global */
+            font-weight: bold;
+        }
+    }
+    
+    // seccion main */
+    main {
+        grid-area: main;
+        h1 {
+            position: absolute;
+            top: 7rem;
+            left: 9rem;
+            color: whitesmoke;
+            z-index: 1;
+            text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+        }
+        div {
+            img {
+                width: 100%;
+            }
+        }
+        .btn-container-contacto {
+            position: absolute;
+            top: 12rem;
+            left: 10rem;
+            z-index: 1;
+            background-color: #9acd32;
+            border: 2px solid #9acd32;
+        }
+    }
+
+    // seccion social */
+    .section-social {
+        grid-area: social;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2 {
+            margin-top: 2rem;
+        }
+        
+        .redes1 {
+            margin-top: 1rem;
+        }
+        
+        .redes2 {
+            margin-top: 1rem;
+        }
+    }
+    // seccion formulario */
+    .formulario {
+        grid-area: formulario;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+        h2 {
+            margin-top: 4rem;
+        }
+        .form {
+            margin-top: 2rem;
+        }
+    }
+    // footer */        
+    footer {/* global */
+        grid-area: footer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 7rem;
+        h3 {
+            font-weight: bold;
+        }
+        h3 {
+            a {
+                text-decoration: none;
+                color: #9acd32;
+            }
+        }
+    }
+}
+
+
+
+
+@media screen and (min-width:768px) {
+    /* PAGINA INDEX */
+    /* contenedor de la home */
+    .home {
+        grid-template-areas: 
+        "header header header header"
+        "main main main main"
+        "part1 part1 part1 part1"
+        "part2 part2 part2 part2"
+        "part3 part3 part3 part3"
+        "part4 part4 part4 part4"
+        "part5 part5 part5 part5"
+        "footer footer footer footer";
+        main {
+            div {
+                h1 {
+                    left: 35rem;
+                    text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+                }
+                .p-principal {
+                    left: 30rem;
+                    text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+                }
+                .p2-principal {
+                    left: 27rem;
+                    text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+                }
+                .img-principal {
+                    height: 52rem;
+                }
+                .btn-container {
+                    left: 35rem;
+                }
+            }
+        }
+        // seccion sobre mi
+        .sobre-mi {
+            position: relative;
+            align-items: baseline;
+            h4 {
+                margin-top: 3rem;
+                margin-bottom: 1rem;
+                margin-left: 18rem;
+            }
+            div {
+                img {
+                    top: 2rem;
+                    position: absolute;
+                    right: 15rem;
+                }
+            }
+            p {
+                width: 30%;
+                margin-left: 21rem;
+            }
+            div {
+                margin-left: 21rem;
+            }
+        }
+        // seccion experiencia */
+        .experiencia {
+            display: grid;
+            grid-template-areas: 
+            "h3"
+            "p"
+            "ul";
+            h4 {
+                grid-area: h3;
+                margin-left: 20rem;
+            }
+            p {
+                grid-area: p;
+                width: 45rem;
+                margin-left: 24rem;
+            }
+            ul {
+                grid-area: ul;
+                width: 45rem;
+                margin-left: 24rem;
+            }
+        }
+        // seccion proyectos */
+        .proyectos {
+            position: relative;
+            align-items: baseline;
+            height: 30rem;
+            h4 {
+                padding-left: 15rem;
+                span {
+                    color: yellowgreen; // se repite
+                }
+            }
+            h5 {
+                position: absolute;
+                top: 5rem;        
+                margin-left: 20rem;
+            } 
+            p {
+                width: 20rem;
+                top: 6rem;
+                left: 22rem;
+                position: absolute;
+            }
+            .carousel {
+                margin-left: 45rem;
+                width: 25rem;
+                    .d-block {
+                        height: auto;
+                        width: auto;
+                    }
+                .image1 {
+                    height: auto;
+                    width: auto;
+                }
+            }
+            .btn-ver-proyectos {
+                position: absolute;
+                top: 15rem;
+                left: 21rem;
+            }
+
+            .btn-ver-mas-proyectos {
+                display: block;
+                border: 2px solid yellowgreen;
+                position: absolute;
+                top: 24rem;
+                left: 45rem;
+                margin-bottom: 3rem;
+            }
+        } 
+        // seccion contactame */
+        .contactame { 
+            h4 {
+               margin-top: 1rem;
+            }
+            p {
+                width: 50rem;
+                margin-top: 1rem;
+            }
+            .btn-contactame {
+                margin-top: 1rem;
+            }
+        }
+       
+
+        
+    
+    }
+    /* -------------- PAGINA SOBRE MI -------------- */
+    .pagina-sobre-mi {
+        main {
+            h1 {
+                top: 18rem;
+                left: 38rem;
+                text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+            }
+            div {
+                .img-principal {
+                    height: 52rem;
+                }
+            }
+            p {
+                top: 28rem;
+                left: 30rem;
+                width: 30rem;
+                text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+            }
+        }
+        // seccion descrpcion */
+        .descripcion {
+            p {
+                margin-top: 1rem;
+                width: 50rem;
+            } 
+        }
+        //galeria
+        .galeria {
+            h2 {
+                   text-align: center;
+            }
+           div {
+               margin-left: .1rem;
+                width: 100%;
+                .img1-2 {
+                    width: 28rem;
+                }
+                .img3-4 {
+                    width: 28rem;
+                }
+                .img5-6 {
+                    width: 28rem;
+                }        
+            }
+        }
+    }   
+    
+    /* ------  HTML EXPERIENCIA ------ */
+    .html-experiencia {
+        main {
+            h1 {
+                top: 18rem;
+                left: 38rem;
+                text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+            }
+            div {
+                .img-principal {
+                    height: 52rem;
+                }
+            }
+            p {
+                top: 28rem;
+                left: 30rem;
+                width: 30rem;
+                text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+            }
+        }
+        /* seccion exp1 */
+        .experiencia-Uno {
+            flex-direction: row;
+            align-items: flex-start;
+            h2 {
+                font-weight: bold;
+                padding-top: 3rem;
+                margin-left: 2rem;
+            }
+            p {
+                margin-top: 0;
+                margin-left: 2rem;
+                padding-top: 4rem;
+                width: 30rem;
+            }
+            div {
+                img {
+                    width: 20rem;
+                    top: 2rem;
+                    left: 60rem;
+                    border: 2px solid;
+                }
+            }
+        }
+
+        /* seccion exp2 */
+        .experiencia-Dos {
+            flex-direction: row;
+            align-items: flex-start;
+            h2 {
+                font-weight: bold;
+                padding-top: 3rem;
+                margin-left: 2rem;
+            }p {
+                margin-top: 0;
+                padding-top: 4rem;
+                margin-left: 3rem;
+                width: 30rem;
+            }
+            div {
+                img {
+                    width: 20rem;
+                    top: 2rem;
+                    left: 60rem;
+                    border: 2px solid;
+                }
+            }
+        }
+
+        .redes-exp {
+            margin-top: 2rem;
+        }
+            
+        }
+
+    /* PAGINA PROYECTO */
+    .titulo-proyecto {
+        top: 18rem;
+        left: 38rem;
+    }
+
+    .p-proyecto {
+        top: 28rem;
+        left: 29rem;
+        width: 30rem;
+    } 
+    
+    /* seccion Proyecto importante */
+    .p-importantes {
+        align-items: baseline;
+        position: relative;
+        height: 24rem;
+    }
+    
+    .p-importantes h2 {
+        margin-top: 2rem;
+        margin-left: 5rem;
+    }
+        
+    .p-importantes p {
+        position: absolute;
+        top: 8rem;
+        left: 8rem;
+        width: 30rem;
+    }
+    
+    .img-proyectos-importantes {
+        position: absolute;
+        right: 5rem;
+        width: 30rem;
+    }
+    .btn-proyectos-importantes {
+        top: 14rem;
+        left: 8rem;
+        position: absolute;
+    } 
+
+    /* ------  HTML CONTACTO ------ */ 
+    .pagina-contacto main h1 {
+        top: 18rem;
+        left: 38rem;
+    }
+
+    .btn-container-contacto {
+        top: 28rem;
+        left: 41rem;
+    }
+    /* seccion social */
+    .section-social h2 {
+        margin-top: 4rem;
+    }
+
+    .redes1 {
+        margin-top: 1rem;
+    }
+
+    .redes2 {
+        margin-top: 1rem;
+    }
+
+    .bi-instagram {
+        font-size: xx-large;
+        margin: 1rem;
+    }
+    
+    .bi-linkedin {
+        font-size: xx-large;
+        margin: 1rem;
+    }
+    
+    .bi-github {
+        font-size: xx-large;
+        margin: 1rem;
+    }
+    
+    .bi-twitter {
+        font-size: xx-large;
+        margin: 1rem;
+    }
+    
+    .bi-facebook {
+        font-size: xx-large;
+        margin: 1rem;
+    }
+
+    /* seccion formulario */
+    .btn-enviar {
+        border: 2px solid #9acd32;
+        width: 6rem;
+        background-color: #9acd32;
+    }
+
+
+
+}
