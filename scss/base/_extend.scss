@@ -1,0 +1,74 @@
+%Logo {
+    .navbar-brand h2 {     
+        font-weight: bold;
+    }
+}
+
+%botones {
+    border: 2px solid #9acd32;
+    background-color: #9acd32; 
+    color: #9acd32;
+}
+
+%width-img {
+    div {
+        .img-principal {        
+            width: 100%;
+        }    
+    }
+}
+
+%z-index {
+    z-index: 1;
+}
+
+%btn:hover {
+    .btn:hover {
+        background-color: $color-general;
+    }
+}
+
+%redes-sociales {
+    .bi-github {
+        font-size: x-large;
+        width: 2rem;
+        height: 2rem;
+        color: $color-general;
+    }
+
+    .bi-twitter {
+        font-size: x-large;
+        width: 2rem;
+        height: 2rem;
+        color: $color-general;
+    }
+
+    .bi-facebook {
+        font-size: x-large;
+        width: 2rem;
+        height: 2rem;
+        color: $color-general;
+    }
+
+    .bi-linkedin {
+        font-size: x-large;
+        width: 2rem;
+        height: 2rem;
+        color: $color-general;
+    }
+
+    .bi-instagram {
+        font-size: x-large;
+        width: 2rem;
+        height: 2rem;
+        color: $color-general;
+    }
+}
+
+%btn-card {
+    .btn {
+        border: 2px solid #9acd32;
+        color: black;
+        background-color: white;
+    }
+}

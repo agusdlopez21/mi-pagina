@@ -1,0 +1,115 @@
+// Pagina Home
+@mixin home {
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "part1 part1"
+    "part2 part2"
+    "part3 part3"
+    "part4 part4"
+    "part5 part5"
+    "footer footer";
+}
+
+@mixin font-weight {
+    font-weight: bold;
+}
+
+@mixin text-shadow {
+    text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+}
+
+@mixin box-shadow {
+    box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.181);
+}
+
+@mixin redes-sociales {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+//Footer Global
+@mixin Footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 7rem;
+    h3 {
+    @include font-weight;
+    }
+    h3 {
+        a {
+            text-decoration: none;
+            color: $color-general;
+        }
+    }
+}
+
+//Pagina Sobre Mi
+@mixin pagina-sobre-mi {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "p1 p1"
+    "img img"
+    "redes redes"
+    "footer footer";
+    width: 100%;
+}
+
+//PAGINA DE EXPERIENCIA
+@mixin html-experiencia {
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "exp1 exp1"
+    "exp2 exp2"
+    "redes redes"
+    "foot foot";
+}
+
+@mixin parrafos-exp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+        margin-bottom: 1rem;
+    }
+    p {
+        width: 25rem;
+    }
+    div {
+        img {
+            width: 25rem;
+        }
+    }
+}
+
+// PAGINA DE PROYECTOS
+@mixin pagina-proyectos {
+    width: 100%;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "part1 part1"
+    "part2 part2"
+    "redes redes"
+    "footer footer";
+}
+
+// PAGINA DE CONTACTO
+@mixin pagina-contacto {
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "section section"
+    "footer footer";
+}
