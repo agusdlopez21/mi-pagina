@@ -14,26 +14,25 @@
         "part5 part5 part5 part5"
         "footer footer footer footer";
         main {
-            div {
-                h1 {
-                    left: 35rem;
-                    text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
-                }
-                .p-principal {
-                    left: 30rem;
-                    text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
-                }
-                .p2-principal {
-                    left: 27rem;
-                    text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
-                }
-                .img-principal {
-                    height: 52rem;
-                }
-                .btn-container {
-                    left: 35rem;
-                }
+            h1 {
+                left: 35rem;
+                text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
             }
+            .p-principal {
+                left: 30rem;
+                text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+            }
+            .p2-principal {
+                left: 27rem;
+                text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+            }
+            .img-principal {
+                height: 100vh;
+             }
+            .btn-container {
+                left: 35rem;
+            }
+           
         }
         // seccion sobre mi
         .sobre-mi {
@@ -143,6 +142,14 @@
                 margin-top: 1rem;
             }
         }
+
+        footer {
+            flex-direction: row;
+            justify-content: center;
+            h3 {
+                margin: .5rem;
+            }
+        }
        
 
         
@@ -153,20 +160,18 @@
         main {
             h1 {
                 top: 18rem;
-                left: 38rem;
+                left: 37rem;
                 text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
-            }
-            div {
-                .img-principal {
-                    height: 52rem;
-                }
             }
             p {
                 top: 28rem;
                 left: 30rem;
                 width: 30rem;
                 text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+            }.img-principal {
+                height: 100vh;
             }
+            height: auto;
         }
         // seccion descrpcion 
         .descripcion {
@@ -194,71 +199,70 @@
                 }        
             }
         }
+
+        footer {
+            flex-direction: row;
+            justify-content: center;
+            h3 {
+                margin: .5rem;
+            }
+        }
     }   
     /* ------  HTML EXPERIENCIA ------ */
     .html-experiencia {
         main {
             h1 {
                 top: 18rem;
-                left: 38rem;
+                left: 34.5rem;
                 text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
-            }
-            div {
-                .img-principal {
-                    height: 52rem;
-                }
             }
             p {
                 top: 28rem;
-                left: 30rem;
+                left: 27rem;
                 width: 30rem;
                 text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+            }
+            img {
+                height: 100vh;
             }
         }
         // seccion exp1 
         .experiencia-Uno {
             flex-direction: row;
-            align-items: flex-start;
+            justify-content: space-around;
             h2 {
                 font-weight: bold;
-                padding-top: 3rem;
-                margin-left: 2rem;
+                padding-bottom: 10rem;
             }
             p {
-                margin-top: 0;
-                margin-left: 2rem;
-                padding-top: 4rem;
+                display: flex;
+                flex-direction: column;
                 width: 30rem;
             }
             div {
                 img {
                     width: 20rem;
-                    top: 2rem;
-                    left: 60rem;
                     border: 2px solid;
                 }
             }
         }
 
         // seccion exp2 
-        .experiencia-Dos {
-            flex-direction: row;
-            align-items: flex-start;
+        .experiencia-Dos {flex-direction: row;
+            justify-content: space-around;
             h2 {
                 font-weight: bold;
-                padding-top: 3rem;
-                margin-left: 2rem;
-            }p {
+                padding-bottom: 10rem;
+            }
+            p {
                 margin-top: 0;
+                margin-left: 2rem;
                 padding-top: 4rem;
-                margin-left: 3rem;
                 width: 30rem;
             }
             div {
                 img {
                     width: 20rem;
-                    top: 2rem;
-                    left: 60rem;
                     border: 2px solid;
                 }
             }
@@ -267,6 +271,14 @@
         .redes-exp {
             margin-top: 2rem;
         }
+
+        footer {
+            flex-direction: row;
+            justify-content: center;
+            h3 {
+                margin: .5rem;
+            }
+        }
             
     }
     /* PAGINA PROYECTO */
@@ -274,13 +286,16 @@
         main {
             h1 {
                 top: 18rem;
-                left: 38rem;
+                left: 36rem;
             }
             p {
             top: 28rem;
-            left: 29rem;
+            left: 28rem;
             width: 30rem;
             text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+            }
+            img {
+                height: 100vh;
             }
         }
         .p-importantes {    
@@ -320,8 +335,17 @@
             div {
                 display: block;
                 .imp2 {
-                    display: block;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
                 }            
+            }
+        }
+        footer {
+            flex-direction: row;
+            justify-content: center;
+            h3 {
+                margin: .5rem;
             }
         }
     }
@@ -330,16 +354,16 @@
         main {
             h1 {
                 top: 18rem;
-                left: 38rem;
+                left: 34rem;
             }
             div {
                 img {
-                    height: 52rem;
+                    height: 100vh;
                 }
             }
             .btn-container-contacto {
                 top: 28rem;
-                left: 41rem;
+                left: 38rem;
             }
         }
 
@@ -347,6 +371,7 @@
         .section-social {
              h2 {
                 margin-top: 4rem;
+                text-align: center;
             }
 
             .redes1 {
@@ -363,10 +388,6 @@
                     font-size: xx-large;
                     margin: 1rem;
                 }
-            }
-
-            .redes2 {
-                margin-top: 1rem;
                 .bi-linkedin {
                     font-size: xx-large;
                     margin: 1rem;
@@ -382,6 +403,13 @@
             border: 2px solid #9acd32;
             width: 6rem;  
             background-color: #9acd32;
+        }
+        footer {
+            flex-direction: row;
+            justify-content: center;
+            h3 {
+                margin: .5rem;
+            }
         }
     }
     }

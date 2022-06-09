@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'M PLUS Code Latin', sans-serif;
-}
+
 
 
 @import "base/mixins";
@@ -24,47 +24,46 @@
     // main 
     main {
         grid-area: main;
-        div {
-             position: relative;
-             .p-principal {
-                position: absolute;
-                top: 30%;
-                left: 8rem;
-                font-style: italic;
-                color: $color-texto;
-                @extend %z-index;
-                @include text-shadow;
-            }
-            h1 {
-                position: absolute;
-                top: 45%;
-                left: 8.5rem;
-                color: $color-texto;
-                @extend %z-index;
-                @include text-shadow;
-            }
-            .p2-principal {
-                position: absolute;
-                top: 65%;
-                left: 1.3rem;
-                font-style: italic;
-                color: $color-texto;
-                @extend %z-index;
-                @include text-shadow;
-            }
-            @extend %width-img;
-            .btn-container {
-                position: absolute;
-                top: 80%;
-                left: 7.5rem;
-                @extend %botones;
-                a {
-                    @include font-weight;
-                }
+        position: relative;
+        .p-principal {
+            position: absolute;
+            top: 30%;
+            left: 8rem;
+            font-style: italic;
+            color: $color-texto;
+            @extend %z-index;
+            @include text-shadow;
+        }
+        h1 {
+            position: absolute;
+            top: 45%;
+            left: 8.5rem;
+            color: $color-texto;
+            @extend %z-index;
+            @include text-shadow;
+        }
+        .p2-principal {
+            position: absolute;
+            top: 65%;
+            left: 1.3rem;
+            font-style: italic;
+            color: $color-texto;
+            @extend %z-index;
+            @include text-shadow;
+        }
+        @extend %width-img;
+        .btn-container {
+            position: absolute;
+            top: 80%;
+            left: 7.5rem;
+            @extend %botones;
+            a {
+                @include font-weight;
             }
         }
-        
+       
     }
+    @extend %sombra-img;
     // Seccion sobre mi 
     .sobre-mi {
         grid-area: part1;
@@ -205,6 +204,7 @@
     }
     // seccion main 
     main {
+        position: relative;
         grid-area: main;
         h1 {
             position: absolute;
@@ -216,6 +216,7 @@
         }
         @extend %width-img;
     }
+    @extend %sombra-img;
     // seccion descrpcion
     .descripcion {
         grid-area: p1;
@@ -265,6 +266,7 @@
     }
     // main 
     main {
+        position: relative;
         grid-area: main;
         h1 {
             position: absolute;
@@ -287,6 +289,7 @@
         }
         @extend %width-img;
     }
+    @extend %sombra-img;
     // seccion exp1 
     .experiencia-Uno {
         grid-area: exp1;
@@ -326,6 +329,7 @@
         @extend %Logo;
     }
     main {
+        position: relative;
         grid-area: main;
         h1 {
             position: absolute;
@@ -347,6 +351,7 @@
         }
         @extend %width-img;
     }
+    @extend %sombra-img;
 // seccion Proyecto importante 
     .p-importantes {
         grid-area: part1;
@@ -410,6 +415,12 @@
         div {
             .imp2 {
                 display: none;
+                .card {
+                    margin: 1rem;
+                    display: flex;
+                    align-items: center;
+                    @extend %btn-card;
+                }
             }            
         }
         .btn-otros-proyectos {
@@ -447,6 +458,7 @@
     
     // seccion main 
     main {
+        position: relative;
         grid-area: main;
         h1 {
             position: absolute;
@@ -464,7 +476,9 @@
             @extend %z-index;
             @extend %botones;
         }
+        @extend %width-img;
     }
+    @extend %sombra-img;
 
     // seccion social y formulario
     section {
@@ -509,3 +523,5 @@
 }
 
 @include mediaqueri-1024px;
+
+}
