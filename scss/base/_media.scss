@@ -234,7 +234,7 @@
                 font-weight: bold;
                 padding-bottom: 10rem;
             }
-            p {
+            .parrafo {
                 display: flex;
                 flex-direction: column;
                 width: 30rem;
@@ -248,16 +248,16 @@
         }
 
         // seccion exp2 
-        .experiencia-Dos {flex-direction: row;
+        .experiencia-Dos {
+            flex-direction: row;
             justify-content: space-around;
             h2 {
                 font-weight: bold;
                 padding-bottom: 10rem;
             }
-            p {
-                margin-top: 0;
-                margin-left: 2rem;
-                padding-top: 4rem;
+            .parrafo {
+                display: flex;
+                flex-direction: column;
                 width: 30rem;
             }
             div {

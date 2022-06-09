@@ -81,8 +81,16 @@
     h2 {
         margin-bottom: 1rem;
     }
-    p {
+    .parrafo {
         width: 25rem;
+        span {
+            font-weight: bold;
+        }
+        .underline {
+            text-decoration: underline;
+            font-weight: bold;
+            color: yellowgreen;
+        }
     }
     div {
         img {

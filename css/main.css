@@ -261,8 +261,14 @@
       align-items: center; }
       * .html-experiencia .experiencia-Uno h2 {
         margin-bottom: 1rem; }
-      * .html-experiencia .experiencia-Uno p {
+      * .html-experiencia .experiencia-Uno .parrafo {
         width: 25rem; }
+        * .html-experiencia .experiencia-Uno .parrafo span {
+          font-weight: bold; }
+        * .html-experiencia .experiencia-Uno .parrafo .underline {
+          text-decoration: underline;
+          font-weight: bold;
+          color: yellowgreen; }
       * .html-experiencia .experiencia-Uno div img {
         width: 25rem; }
     * .html-experiencia .experiencia-Dos {
@@ -272,8 +278,14 @@
       align-items: center; }
       * .html-experiencia .experiencia-Dos h2 {
         margin-bottom: 1rem; }
-      * .html-experiencia .experiencia-Dos p {
+      * .html-experiencia .experiencia-Dos .parrafo {
         width: 25rem; }
+        * .html-experiencia .experiencia-Dos .parrafo span {
+          font-weight: bold; }
+        * .html-experiencia .experiencia-Dos .parrafo .underline {
+          text-decoration: underline;
+          font-weight: bold;
+          color: yellowgreen; }
       * .html-experiencia .experiencia-Dos div img {
         width: 25rem; }
     * .html-experiencia .redes-sociales {
@@ -329,7 +341,9 @@
         margin-top: 1rem;
         width: 25rem; }
       * .pagina-proyectos .p-importantes div img {
-        border: 1px solid; }
+        border: 1px solid;
+        width: 25rem;
+        height: auto; }
       * .pagina-proyectos .p-importantes div a {
         margin-top: 1rem;
         color: black; }
@@ -583,7 +597,7 @@
         * .html-experiencia .experiencia-Uno h2 {
           font-weight: bold;
           padding-bottom: 10rem; }
-        * .html-experiencia .experiencia-Uno p {
+        * .html-experiencia .experiencia-Uno .parrafo {
           display: flex;
           flex-direction: column;
           width: 30rem; }
@@ -596,10 +610,9 @@
         * .html-experiencia .experiencia-Dos h2 {
           font-weight: bold;
           padding-bottom: 10rem; }
-        * .html-experiencia .experiencia-Dos p {
-          margin-top: 0;
-          margin-left: 2rem;
-          padding-top: 4rem;
+        * .html-experiencia .experiencia-Dos .parrafo {
+          display: flex;
+          flex-direction: column;
           width: 30rem; }
         * .html-experiencia .experiencia-Dos div img {
           width: 20rem;
