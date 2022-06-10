@@ -415,3 +415,352 @@
     }
 }
 
+@mixin tablet-768px {
+    @media screen and (min-width:768px) {
+     // PAGINA INDEX 
+    .home {
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+        "part1 part1 part1"
+        "part2 part2 part2"
+        "part3 part3 part3"
+        "part4 part4 part4"
+        "part5 part5 part5"
+        "footer footer footer";
+        main {
+            h1 {
+                left: 24rem;
+            }
+            .p-principal {
+                left: 20rem;
+            }
+            .p2-principal {
+                left: 17rem;
+            }
+            .btn-container {
+                left: 24rem;
+            }
+           
+        }
+        // seccion sobre mi
+        .sobre-mi {
+            position: relative;
+            align-items: baseline;
+            h4 {
+                margin-top: 3rem;
+                margin-bottom: 1rem;
+                margin-left: 5rem;
+            }
+            div {
+                img {
+                    top: 2rem;
+                    position: absolute;
+                    right: 2rem;
+                }
+            }
+            p {
+                width: 30rem;
+                margin-left: 6rem;
+            }
+            div {
+                margin-left: 6rem;
+            }
+        }
+        // seccion experiencia 
+        .experiencia {
+            display: grid;
+            grid-template-areas: 
+            "h3"
+            "p"
+            "ul";
+            h4 {
+                grid-area: h3;
+                margin-left: 5rem;
+            }
+            p {
+                grid-area: p;
+                width: 45rem;
+                margin-left: 7rem;
+            }
+            ul {
+                grid-area: ul;
+                width: 45rem;
+                margin-left: 7rem;
+            }
+        }
+        // seccion proyectos 
+        .proyectos {
+            position: relative;
+            align-items: baseline;
+            height: 30rem;
+            h4 {
+                padding-left: 5rem;
+                span {
+                    color: yellowgreen; 
+                }
+            }
+            h5 {
+                position: absolute;
+                top: 5rem;        
+                margin-left: 6rem;
+            } 
+            p {
+                width: 20rem;
+                top: 6rem;
+                left: 8rem;
+                position: absolute;
+            }
+            .carousel {
+                margin-left: 30rem;
+                width: 25rem;
+                    .d-block {
+                        height: auto;
+                        width: auto;
+                    }
+                .image1 {
+                    height: auto;
+                    width: auto;
+                }
+            }
+            .btn-ver-proyectos {
+                position: absolute;
+                top: 15rem;
+                left: 8rem;
+            }
+
+            .btn-ver-mas-proyectos {
+                display: block;
+                border: 2px solid yellowgreen;
+                position: absolute;
+                top: 24rem;
+                left: 25rem;
+                margin-bottom: 3rem;
+            }
+        } 
+        // seccion contactame 
+        .contactame { 
+            h4 {
+               margin-top: 1rem;
+            }
+            p {
+                width: 50rem;
+                margin-top: 1rem;
+            }
+            .btn-contactame {
+                margin-top: 1rem;
+            }
+        }
+
+        footer {
+            flex-direction: row;
+            justify-content: center;
+            h3 {
+                margin: .5rem;
+            }
+        }
+    }  
+    //pagina sobremi
+    .pagina-sobre-mi {
+        main {
+            h1 {
+                top: 16rem;
+                left: 20rem;
+                text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+            }
+        }
+        // seccion descrpcion 
+        .descripcion {
+            p {
+                margin-top: 1rem;
+                width: 40rem;
+            } 
+        }
+        //galeria
+        .galeria {
+            h2 {
+                   text-align: center;
+            }
+           div {
+               margin-left: 1rem;
+                width: 45rem;
+                .img1-2 {
+                    width: 13rem;
+                }
+                .img3-4 {
+                    width: 13rem;
+                }
+                .img5-6 {
+                    width: 13rem;
+                }        
+            }
+        }
+
+        footer {
+            flex-direction: row;
+            justify-content: center;
+            h3 {
+                margin: .5rem;
+            }
+        }
+    }  
+    /* ------  HTML EXPERIENCIA ------ */
+    .html-experiencia {
+        main {
+            h1 {
+                top: 12rem;
+                left: 20rem;
+                text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+            }
+            p {
+                top: 18rem;
+                left: 11rem;
+                width: 30rem;
+                text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+            }
+        }
+        // seccion exp1 
+        .experiencia-Uno {
+            align-items: baseline;
+            h2 {
+                font-weight: bold;
+                margin-left: 3rem;
+            }
+            .parrafo {
+                display: flex;
+                flex-direction: column;
+                width: 34rem;
+                margin-left: 7rem;
+            }
+            div {
+                img {
+                    width: 20rem;
+                    border: 2px solid;
+                    margin-left: 14rem;
+                }
+            }
+        }
+
+        // seccion exp2 
+        .experiencia-Dos {
+            align-items: baseline;
+            h2 {
+                font-weight: bold;
+                margin-left: 3rem;
+            }
+            .parrafo {
+                display: flex;
+                flex-direction: column;
+                width: 34rem;
+                margin-left: 7rem;
+            }
+            div {
+                img {
+                    width: 20rem;
+                    border: 2px solid;
+                    margin-left: 14rem;
+                }
+            }
+        }
+
+        .redes-exp {
+            margin-top: 2rem;
+        }
+
+        footer {
+            flex-direction: row;
+            justify-content: center;
+            h3 {
+                margin: .5rem;
+            }
+        }
+            
+    }
+    /* ------------ PAGINA PROYECTO -------------- */
+    .pagina-proyectos {
+    main {
+        h1 {
+            top: 12rem;
+            left: 20rem;
+        }
+        p {
+            top: 18rem;
+            left: 15rem;
+            width: 20rem;
+        }
+    }
+// seccion Proyecto importante 
+    .p-importantes {
+        h2 {
+            margin-top: 2rem;
+        }
+        p {
+            margin-top: 1rem;
+            width: 25rem;
+        }
+        div {
+            img {   
+                border: 1px solid;
+                width: 25rem;
+                height: auto;
+            }
+        }
+        div {
+            a {
+                margin-top: 1rem;
+                color: black;
+            }
+        }
+    }
+    //  seccion otros-proyectos 
+    .otros-proyectos {
+        h2 {
+            margin-top: 4rem;
+        }
+        h3 {
+            margin-top: 1rem;
+        }
+        div {
+            .imp1 {
+                flex-direction: row;
+                width: 40rem;
+                .card {
+                    margin: 1rem;
+                    display: flex;
+                    align-items: center;
+                }
+            }      
+        }
+        div {
+            .imp2 {
+                display: block;
+                display: flex;
+                flex-direction: row;
+                width: 40rem;
+                .card {
+                    margin: 1rem;
+                    display: flex;
+                    align-items: center;
+                }
+            }            
+        }
+    }
+
+    }
+    .pagina-contacto {
+        // seccion main 
+    main {
+        h1 {
+            top: 12rem;
+            left: 17rem;
+        }
+        .btn-container-contacto {
+            top: 18rem;
+            left: 20rem;
+        }
+    }
+    }
+
+    }
+}
+

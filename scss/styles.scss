@@ -523,7 +523,9 @@
         @include Footer;
     }
 }
-
+@include tablet-768px;
 @include mediaqueri-1024px;
+
+
 
 }

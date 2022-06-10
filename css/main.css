@@ -446,6 +446,211 @@
       * .pagina-contacto footer h3 a {
         text-decoration: none;
         color: yellowgreen; }
+  @media screen and (min-width: 768px) {
+    * {
+      /* ------  HTML EXPERIENCIA ------ */
+      /* ------------ PAGINA PROYECTO -------------- */ }
+      * .home {
+        grid-template-areas: "header header header" "main main main" "part1 part1 part1" "part2 part2 part2" "part3 part3 part3" "part4 part4 part4" "part5 part5 part5" "footer footer footer"; }
+        * .home main h1 {
+          left: 24rem; }
+        * .home main .p-principal {
+          left: 20rem; }
+        * .home main .p2-principal {
+          left: 17rem; }
+        * .home main .btn-container {
+          left: 24rem; }
+        * .home .sobre-mi {
+          position: relative;
+          align-items: baseline; }
+          * .home .sobre-mi h4 {
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            margin-left: 5rem; }
+          * .home .sobre-mi div img {
+            top: 2rem;
+            position: absolute;
+            right: 2rem; }
+          * .home .sobre-mi p {
+            width: 30rem;
+            margin-left: 6rem; }
+          * .home .sobre-mi div {
+            margin-left: 6rem; }
+        * .home .experiencia {
+          display: grid;
+          grid-template-areas: "h3" "p" "ul"; }
+          * .home .experiencia h4 {
+            grid-area: h3;
+            margin-left: 5rem; }
+          * .home .experiencia p {
+            grid-area: p;
+            width: 45rem;
+            margin-left: 7rem; }
+          * .home .experiencia ul {
+            grid-area: ul;
+            width: 45rem;
+            margin-left: 7rem; }
+        * .home .proyectos {
+          position: relative;
+          align-items: baseline;
+          height: 30rem; }
+          * .home .proyectos h4 {
+            padding-left: 5rem; }
+            * .home .proyectos h4 span {
+              color: yellowgreen; }
+          * .home .proyectos h5 {
+            position: absolute;
+            top: 5rem;
+            margin-left: 6rem; }
+          * .home .proyectos p {
+            width: 20rem;
+            top: 6rem;
+            left: 8rem;
+            position: absolute; }
+          * .home .proyectos .carousel {
+            margin-left: 30rem;
+            width: 25rem; }
+            * .home .proyectos .carousel .d-block {
+              height: auto;
+              width: auto; }
+            * .home .proyectos .carousel .image1 {
+              height: auto;
+              width: auto; }
+          * .home .proyectos .btn-ver-proyectos {
+            position: absolute;
+            top: 15rem;
+            left: 8rem; }
+          * .home .proyectos .btn-ver-mas-proyectos {
+            display: block;
+            border: 2px solid yellowgreen;
+            position: absolute;
+            top: 24rem;
+            left: 25rem;
+            margin-bottom: 3rem; }
+        * .home .contactame h4 {
+          margin-top: 1rem; }
+        * .home .contactame p {
+          width: 50rem;
+          margin-top: 1rem; }
+        * .home .contactame .btn-contactame {
+          margin-top: 1rem; }
+        * .home footer {
+          flex-direction: row;
+          justify-content: center; }
+          * .home footer h3 {
+            margin: .5rem; }
+      * .pagina-sobre-mi main h1 {
+        top: 16rem;
+        left: 20rem;
+        text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8); }
+      * .pagina-sobre-mi .descripcion p {
+        margin-top: 1rem;
+        width: 40rem; }
+      * .pagina-sobre-mi .galeria h2 {
+        text-align: center; }
+      * .pagina-sobre-mi .galeria div {
+        margin-left: 1rem;
+        width: 45rem; }
+        * .pagina-sobre-mi .galeria div .img1-2 {
+          width: 13rem; }
+        * .pagina-sobre-mi .galeria div .img3-4 {
+          width: 13rem; }
+        * .pagina-sobre-mi .galeria div .img5-6 {
+          width: 13rem; }
+      * .pagina-sobre-mi footer {
+        flex-direction: row;
+        justify-content: center; }
+        * .pagina-sobre-mi footer h3 {
+          margin: .5rem; }
+      * .html-experiencia main h1 {
+        top: 12rem;
+        left: 20rem;
+        text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8); }
+      * .html-experiencia main p {
+        top: 18rem;
+        left: 11rem;
+        width: 30rem;
+        text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8); }
+      * .html-experiencia .experiencia-Uno {
+        align-items: baseline; }
+        * .html-experiencia .experiencia-Uno h2 {
+          font-weight: bold;
+          margin-left: 3rem; }
+        * .html-experiencia .experiencia-Uno .parrafo {
+          display: flex;
+          flex-direction: column;
+          width: 34rem;
+          margin-left: 7rem; }
+        * .html-experiencia .experiencia-Uno div img {
+          width: 20rem;
+          border: 2px solid;
+          margin-left: 14rem; }
+      * .html-experiencia .experiencia-Dos {
+        align-items: baseline; }
+        * .html-experiencia .experiencia-Dos h2 {
+          font-weight: bold;
+          margin-left: 3rem; }
+        * .html-experiencia .experiencia-Dos .parrafo {
+          display: flex;
+          flex-direction: column;
+          width: 34rem;
+          margin-left: 7rem; }
+        * .html-experiencia .experiencia-Dos div img {
+          width: 20rem;
+          border: 2px solid;
+          margin-left: 14rem; }
+      * .html-experiencia .redes-exp {
+        margin-top: 2rem; }
+      * .html-experiencia footer {
+        flex-direction: row;
+        justify-content: center; }
+        * .html-experiencia footer h3 {
+          margin: .5rem; }
+      * .pagina-proyectos main h1 {
+        top: 12rem;
+        left: 20rem; }
+      * .pagina-proyectos main p {
+        top: 18rem;
+        left: 15rem;
+        width: 20rem; }
+      * .pagina-proyectos .p-importantes h2 {
+        margin-top: 2rem; }
+      * .pagina-proyectos .p-importantes p {
+        margin-top: 1rem;
+        width: 25rem; }
+      * .pagina-proyectos .p-importantes div img {
+        border: 1px solid;
+        width: 25rem;
+        height: auto; }
+      * .pagina-proyectos .p-importantes div a {
+        margin-top: 1rem;
+        color: black; }
+      * .pagina-proyectos .otros-proyectos h2 {
+        margin-top: 4rem; }
+      * .pagina-proyectos .otros-proyectos h3 {
+        margin-top: 1rem; }
+      * .pagina-proyectos .otros-proyectos div .imp1 {
+        flex-direction: row;
+        width: 40rem; }
+        * .pagina-proyectos .otros-proyectos div .imp1 .card {
+          margin: 1rem;
+          display: flex;
+          align-items: center; }
+      * .pagina-proyectos .otros-proyectos div .imp2 {
+        display: block;
+        display: flex;
+        flex-direction: row;
+        width: 40rem; }
+        * .pagina-proyectos .otros-proyectos div .imp2 .card {
+          margin: 1rem;
+          display: flex;
+          align-items: center; }
+      * .pagina-contacto main h1 {
+        top: 12rem;
+        left: 17rem; }
+      * .pagina-contacto main .btn-container-contacto {
+        top: 18rem;
+        left: 20rem; } }
   @media screen and (min-width: 1024px) {
     * {
       /* PAGINA INDEX */
