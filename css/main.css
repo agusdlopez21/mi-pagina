@@ -642,7 +642,7 @@
     * .pagina-contacto main .btn-container-contacto {
       top: 18rem;
       left: 20rem; } }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1360px) {
     * .home {
       grid-template-areas: "header header header header" "main main main main" "part1 part1 part1 part1" "part2 part2 part2 part2" "part3 part3 part3 part3" "part4 part4 part4 part4" "part5 part5 part5 part5" "footer footer footer footer"; }
       * .home main h1 {
