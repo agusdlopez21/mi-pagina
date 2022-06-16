@@ -5,23 +5,23 @@
     box-sizing: border-box;
     font-family: 'M PLUS Code Latin', sans-serif;
 
-
-
+// import de hojas secundarias
 @import "base/mixins";
 @import "base/variables";
 @import "base/extend";
 @import "base/media.scss";
 
 // mobile first 480px
-/* ESTILO DE LA PAGINA INDEX */
+// ------  PAGINA DE INICIO ------ 
 .home {
+    // aplicacion de grid
     @include home;
-    // header
+  // ------  seccion header ------
     header { 
         grid-area: header;
         @extend %Logo;
     }
-    // main 
+  // ------  seccion main ------
     main {
         grid-area: main;
         position: relative;
@@ -63,8 +63,9 @@
         }
        
     }
+    // aplicando un sombreado a la imagen principal 
     @extend %sombra-img;
-    // Seccion sobre mi 
+  // ------  seccion sobre mi ------
     .sobre-mi {
         grid-area: part1;
         display: flex;
@@ -94,7 +95,7 @@
         }
     
     }    
-    // seccion experiencia 
+  // ------  seccion experiencia ------
     .experiencia {
         grid-area: part2;
         display: flex;
@@ -113,7 +114,7 @@
             width: 25rem;
         }
     }
-    // seccion proyectos 
+  // ------  seccion proyectos ------
     .proyectos {
         grid-area: part3;
         display: flex;
@@ -150,7 +151,7 @@
         }
         @extend %btn:hover;
     }
-    // seccion contactame
+  // ------  seccion contactame ------
     .contactame {
         grid-area: part4;
         display: flex;
@@ -175,13 +176,13 @@
             margin-top: 1rem;
         }
     }
-    // seccion redes sociales 
+  // ------  seccion redes sociales ------ 
     .redes-sociales {
         grid-area: part5;
         @include redes-sociales;
         @extend %redes-sociales;
     }
-    // footer        
+  // ------  seccion footer ------        
     footer {
         grid-area: footer;
         @include Footer;
@@ -190,19 +191,16 @@
 }
 
 
-
-
-
-
-/* ------  HTML SOBRE MI ------ */
+// ------  PAGINA SOBRE MI ------
 .pagina-sobre-mi {
+    // aplicacion de grid
     @include pagina-sobre-mi;
-    // seccion header 
+  // ------  seccion header ------
     header {
         grid-area: header;
         @extend %Logo;
     }
-    // seccion main 
+  // ------  seccion main ------
     main {
         position: relative;
         grid-area: main;
@@ -216,8 +214,9 @@
         }
         @extend %width-img;
     }
+    // aplicando sobra a la imagen princiapl
     @extend %sombra-img;
-    // seccion descrpcion
+  // ------  seccion descripcion ------
     .descripcion {
         grid-area: p1;
         display: flex;
@@ -226,10 +225,9 @@
         p {
             margin-top: 1rem;
             width: 25rem;
-        }
-        
+        }  
     }
-    // seccion galeria 
+  // ------  seccion galeria ------
     .galeria {
         grid-area: img;
         margin-top: 2rem;
@@ -240,14 +238,13 @@
             width: 30rem;
         }
     }
-    // seccion redes sociales 
-   
+  // ------  seccion redes sociales ------
     .redes-sociales { 
         grid-area: redes;
         @include redes-sociales;
         @extend %redes-sociales;
     }
-    // footer       
+  // ------  seccion footer ------       
     footer {
         grid-area: footer;
         @include Footer;
@@ -255,16 +252,16 @@
 }
 
 
-
-/* ------  HTML EXPERIENCIA ------ */
+// ------  PAGINA EXPERIENCIA ------
 .html-experiencia {
+    // aplicacion de grid
     @include html-experiencia;
-    // seccion header 
+  // ------  seccion header ------
     header {
         grid-area: header;
         @extend %Logo;
     }
-    // main 
+  // ------  seccion main ------
     main {
         position: relative;
         grid-area: main;
@@ -289,45 +286,43 @@
         }
         @extend %width-img;
     }
+    // aplicando un sombreado a ala imagen principal
     @extend %sombra-img;
-    // seccion exp1 
+  // ------  seccion experiencia uno ------
     .experiencia-Uno {
         grid-area: exp1;
         @include parrafos-exp;   
         
     }
-    // seccion exp2 
+  // ------  seccion experiencia dos ------
     .experiencia-Dos {
         grid-area: exp2;    
         @include parrafos-exp; 
     }   
-    // seccion redes sociales  
-   
+  // ------  seccion redes sociales ------
     .redes-sociales {
         grid-area: redes;
         @include redes-sociales;
         @extend %redes-sociales;
     }
-    // footer         
-    footer {/* global */
+  // ------  seccion footer ------
+    footer {
         grid-area: foot;
         @include Footer;
     }
 }
 
 
-
-
-
-
-/* ------------ PAGINA PROYECTO -------------- */
+// ------  PAGINA PROYECTOS ------
 .pagina-proyectos {
+    // aplicacion de grid
     @include pagina-proyectos;
-    // seccion haeader
+  // ------  seccion header ------
     header {
         grid-area: header;
         @extend %Logo;
     }
+  // ------  seccion main ------
     main {
         position: relative;
         grid-area: main;
@@ -351,8 +346,9 @@
         }
         @extend %width-img;
     }
+    // aplicando un sombreado a la imagen principal
     @extend %sombra-img;
-// seccion Proyecto importante 
+  // ------  seccion proyectos importantes ------
     .p-importantes {
         grid-area: part1;
         display: flex;
@@ -384,7 +380,7 @@
             }
         }
     }
-//  seccion otros-proyectos 
+  // ------  seccion otros proyectos ------ 
     .otros-proyectos {
         grid-area: part2;
         display: flex;
@@ -435,13 +431,13 @@
             }
         }
     }
-    //seccion redes sociales
+  // ------  seccion redes sociales ------
     .redes-sociales {
         grid-area: redes;
         @include redes-sociales;
         @extend %redes-sociales;
     }
-    // footer         
+  // ------  seccion footer ------         
     footer {
         grid-area: footer;
         @include Footer;
@@ -449,16 +445,17 @@
 
 }
 
-/* ------  HTML CONTACTO ------ */
+
+// ------  PAGINA DE CONTACTO ------
 .pagina-contacto {
+    // aplicacion de grid
     @include pagina-contacto;
-    // seccion header 
+  // ------  seccion header ------
     header {
         grid-area: header;
         @extend %Logo;
     }
-    
-    // seccion main 
+  // ------  seccion main ------
     main {
         position: relative;
         grid-area: main;
@@ -480,9 +477,9 @@
         }
         @extend %width-img;
     }
+    // aplicando un sombreado a la imagen principal
     @extend %sombra-img;
-
-    // seccion social y formulario
+  // ------  seccion SECTION ------
     section {
         grid-area: section;
         display: flex;
@@ -516,16 +513,21 @@
             }
         }
     }
-    
-    // footer         
+  // ------  seccion footer ------
     footer {
         grid-area: footer;
         @include Footer;
     }
 }
+
+
+
+// ------  INCLUYENDO MEDIA QUERI ------
+// MQ 768PX - TABLET
 @include tablet-768px;
+
+// MQ 1024px - Desktop
+// para pantalla de 1366px 
 @include mediaqueri-1024px;
-
-
 
 }

@@ -3,12 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'M PLUS Code Latin', sans-serif;
-  /* ESTILO DE LA PAGINA INDEX */
-  /* ------  HTML SOBRE MI ------ */
-  /* ------  HTML EXPERIENCIA ------ */
-  /* ------------ PAGINA PROYECTO -------------- */
-  /* ------  HTML CONTACTO ------ */ }
+  font-family: 'M PLUS Code Latin', sans-serif; }
   * .home header .navbar-brand h2, * .pagina-sobre-mi header .navbar-brand h2, * .html-experiencia header .navbar-brand h2, * .pagina-proyectos header .navbar-brand h2, * .pagina-contacto header .navbar-brand h2 {
     font-weight: bold; }
   * .home main .btn-container, * .home .proyectos .btn-ver-proyectos, * .home .contactame .btn-contactame, * .pagina-proyectos .p-importantes div a, * .pagina-proyectos .otros-proyectos .btn-otros-proyectos .btn, * .pagina-contacto main .btn-container-contacto, * .pagina-contacto section .formulario .btn-enviar {
@@ -294,7 +289,6 @@
       justify-content: space-around;
       margin-bottom: 2rem; }
     * .html-experiencia footer {
-      /* global */
       grid-area: foot;
       display: flex;
       flex-direction: column;
@@ -447,468 +441,470 @@
         text-decoration: none;
         color: yellowgreen; }
   @media screen and (min-width: 768px) {
-    * {
-      /* ------  HTML EXPERIENCIA ------ */
-      /* ------------ PAGINA PROYECTO -------------- */ }
-      * .home {
-        grid-template-areas: "header header header" "main main main" "part1 part1 part1" "part2 part2 part2" "part3 part3 part3" "part4 part4 part4" "part5 part5 part5" "footer footer footer"; }
-        * .home main h1 {
-          left: 24rem; }
-        * .home main .p-principal {
-          left: 20rem; }
-        * .home main .p2-principal {
-          left: 17rem; }
-        * .home main .btn-container {
-          left: 24rem; }
-        * .home .sobre-mi {
-          position: relative;
-          align-items: baseline; }
-          * .home .sobre-mi h4 {
-            margin-top: 3rem;
-            margin-bottom: 1rem;
-            margin-left: 5rem; }
-          * .home .sobre-mi div img {
-            top: 2rem;
-            position: absolute;
-            right: 2rem; }
-          * .home .sobre-mi p {
-            width: 30rem;
-            margin-left: 6rem; }
-          * .home .sobre-mi div {
-            margin-left: 6rem; }
-        * .home .experiencia {
-          display: grid;
-          grid-template-areas: "h3" "p" "ul"; }
-          * .home .experiencia h4 {
-            grid-area: h3;
-            margin-left: 5rem; }
-          * .home .experiencia p {
-            grid-area: p;
-            width: 45rem;
-            margin-left: 7rem; }
-          * .home .experiencia ul {
-            grid-area: ul;
-            width: 45rem;
-            margin-left: 7rem; }
-        * .home .proyectos {
-          position: relative;
-          align-items: baseline;
-          height: 30rem; }
-          * .home .proyectos h4 {
-            padding-left: 5rem; }
-            * .home .proyectos h4 span {
-              color: yellowgreen; }
-          * .home .proyectos h5 {
-            position: absolute;
-            top: 5rem;
-            margin-left: 6rem; }
-          * .home .proyectos p {
-            width: 20rem;
-            top: 6rem;
-            left: 8rem;
-            position: absolute; }
-          * .home .proyectos .carousel {
-            margin-left: 30rem;
-            width: 25rem; }
-            * .home .proyectos .carousel .d-block {
-              height: auto;
-              width: auto; }
-            * .home .proyectos .carousel .image1 {
-              height: auto;
-              width: auto; }
-          * .home .proyectos .btn-ver-proyectos {
-            position: absolute;
-            top: 15rem;
-            left: 8rem; }
-          * .home .proyectos .btn-ver-mas-proyectos {
-            display: block;
-            border: 2px solid yellowgreen;
-            position: absolute;
-            top: 24rem;
-            left: 25rem;
-            margin-bottom: 3rem; }
-        * .home .contactame h4 {
-          margin-top: 1rem; }
-        * .home .contactame p {
-          width: 50rem;
-          margin-top: 1rem; }
-        * .home .contactame .btn-contactame {
-          margin-top: 1rem; }
-        * .home footer {
-          flex-direction: row;
-          justify-content: center; }
-          * .home footer h3 {
-            margin: .5rem; }
-      * .pagina-sobre-mi main h1 {
-        top: 16rem;
-        left: 20rem;
-        text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8); }
-      * .pagina-sobre-mi .descripcion p {
-        margin-top: 1rem;
-        width: 40rem; }
-      * .pagina-sobre-mi .galeria h2 {
-        text-align: center; }
-      * .pagina-sobre-mi .galeria div {
-        margin-left: 1rem;
-        width: 45rem; }
-        * .pagina-sobre-mi .galeria div .img1-2 {
-          width: 13rem; }
-        * .pagina-sobre-mi .galeria div .img3-4 {
-          width: 13rem; }
-        * .pagina-sobre-mi .galeria div .img5-6 {
-          width: 13rem; }
-      * .pagina-sobre-mi footer {
-        flex-direction: row;
-        justify-content: center; }
-        * .pagina-sobre-mi footer h3 {
-          margin: .5rem; }
-      * .html-experiencia main h1 {
-        top: 12rem;
-        left: 20rem;
-        text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8); }
-      * .html-experiencia main p {
-        top: 18rem;
-        left: 11rem;
-        width: 30rem;
-        text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8); }
-      * .html-experiencia .experiencia-Uno {
-        align-items: baseline; }
-        * .html-experiencia .experiencia-Uno h2 {
-          font-weight: bold;
-          margin-left: 3rem; }
-        * .html-experiencia .experiencia-Uno .parrafo {
-          display: flex;
-          flex-direction: column;
-          width: 34rem;
-          margin-left: 7rem; }
-        * .html-experiencia .experiencia-Uno div img {
-          width: 20rem;
-          border: 2px solid;
-          margin-left: 14rem; }
-      * .html-experiencia .experiencia-Dos {
-        align-items: baseline; }
-        * .html-experiencia .experiencia-Dos h2 {
-          font-weight: bold;
-          margin-left: 3rem; }
-        * .html-experiencia .experiencia-Dos .parrafo {
-          display: flex;
-          flex-direction: column;
-          width: 34rem;
-          margin-left: 7rem; }
-        * .html-experiencia .experiencia-Dos div img {
-          width: 20rem;
-          border: 2px solid;
-          margin-left: 14rem; }
-      * .html-experiencia .redes-exp {
-        margin-top: 2rem; }
-      * .html-experiencia footer {
-        flex-direction: row;
-        justify-content: center; }
-        * .html-experiencia footer h3 {
-          margin: .5rem; }
-      * .pagina-proyectos main h1 {
-        top: 12rem;
+    * .home {
+      grid-template-areas: "header header header" "main main main" "part1 part1 part1" "part2 part2 part2" "part3 part3 part3" "part4 part4 part4" "part5 part5 part5" "footer footer footer"; }
+      * .home main h1 {
+        left: 24rem; }
+      * .home main .p-principal {
         left: 20rem; }
-      * .pagina-proyectos main p {
-        top: 18rem;
-        left: 15rem;
-        width: 20rem; }
-      * .pagina-proyectos .p-importantes h2 {
-        margin-top: 2rem; }
-      * .pagina-proyectos .p-importantes p {
-        margin-top: 1rem;
-        width: 25rem; }
-      * .pagina-proyectos .p-importantes div img {
-        border: 1px solid;
-        width: 25rem;
-        height: auto; }
-      * .pagina-proyectos .p-importantes div a {
-        margin-top: 1rem;
-        color: black; }
-      * .pagina-proyectos .otros-proyectos h2 {
-        margin-top: 4rem; }
-      * .pagina-proyectos .otros-proyectos h3 {
-        margin-top: 1rem; }
-      * .pagina-proyectos .otros-proyectos div .imp1 {
-        flex-direction: row;
-        width: 40rem; }
-        * .pagina-proyectos .otros-proyectos div .imp1 .card {
-          margin: 1rem;
-          display: flex;
-          align-items: center; }
-      * .pagina-proyectos .otros-proyectos div .imp2 {
-        display: block;
-        display: flex;
-        flex-direction: row;
-        width: 40rem; }
-        * .pagina-proyectos .otros-proyectos div .imp2 .card {
-          margin: 1rem;
-          display: flex;
-          align-items: center; }
-      * .pagina-contacto main h1 {
-        top: 12rem;
+      * .home main .p2-principal {
         left: 17rem; }
-      * .pagina-contacto main .btn-container-contacto {
-        top: 18rem;
-        left: 20rem; } }
-  @media screen and (min-width: 1024px) {
-    * {
-      /* PAGINA INDEX */
-      /* contenedor de la home */
-      /* -------------- PAGINA SOBRE MI -------------- */
-      /* ------  HTML EXPERIENCIA ------ */
-      /* PAGINA PROYECTO */
-      /* ------  HTML CONTACTO ------ */ }
-      * .home {
-        grid-template-areas: "header header header header" "main main main main" "part1 part1 part1 part1" "part2 part2 part2 part2" "part3 part3 part3 part3" "part4 part4 part4 part4" "part5 part5 part5 part5" "footer footer footer footer"; }
-        * .home main h1 {
-          left: 35rem;
-          text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8); }
-        * .home main .p-principal {
-          left: 30rem;
-          text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8); }
-        * .home main .p2-principal {
-          left: 27rem;
-          text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8); }
-        * .home main .img-principal {
-          height: 100vh; }
-        * .home main .btn-container {
-          left: 35rem; }
-        * .home .sobre-mi {
-          position: relative;
-          align-items: baseline; }
-          * .home .sobre-mi h4 {
-            margin-top: 3rem;
-            margin-bottom: 1rem;
-            margin-left: 18rem; }
-          * .home .sobre-mi div img {
-            top: 2rem;
-            position: absolute;
-            right: 15rem; }
-          * .home .sobre-mi p {
-            width: 30%;
-            margin-left: 21rem; }
-          * .home .sobre-mi div {
-            margin-left: 21rem; }
-        * .home .experiencia {
-          display: grid;
-          grid-template-areas: "h3" "p" "ul"; }
-          * .home .experiencia h4 {
-            grid-area: h3;
-            margin-left: 20rem; }
-          * .home .experiencia p {
-            grid-area: p;
-            width: 45rem;
-            margin-left: 24rem; }
-          * .home .experiencia ul {
-            grid-area: ul;
-            width: 45rem;
-            margin-left: 24rem; }
-        * .home .proyectos {
-          position: relative;
-          align-items: baseline;
-          height: 30rem; }
-          * .home .proyectos h4 {
-            padding-left: 15rem; }
-            * .home .proyectos h4 span {
-              color: yellowgreen; }
-          * .home .proyectos h5 {
-            position: absolute;
-            top: 5rem;
-            margin-left: 20rem; }
-          * .home .proyectos p {
-            width: 20rem;
-            top: 6rem;
-            left: 22rem;
-            position: absolute; }
-          * .home .proyectos .carousel {
-            margin-left: 45rem;
-            width: 25rem; }
-            * .home .proyectos .carousel .d-block {
-              height: auto;
-              width: auto; }
-            * .home .proyectos .carousel .image1 {
-              height: auto;
-              width: auto; }
-          * .home .proyectos .btn-ver-proyectos {
-            position: absolute;
-            top: 15rem;
-            left: 21rem; }
-          * .home .proyectos .btn-ver-mas-proyectos {
-            display: block;
-            border: 2px solid yellowgreen;
-            position: absolute;
-            top: 24rem;
-            left: 45rem;
-            margin-bottom: 3rem; }
-        * .home .contactame h4 {
-          margin-top: 1rem; }
-        * .home .contactame p {
-          width: 50rem;
-          margin-top: 1rem; }
-        * .home .contactame .btn-contactame {
-          margin-top: 1rem; }
-        * .home footer {
-          flex-direction: row;
-          justify-content: center; }
-          * .home footer h3 {
-            margin: .5rem; }
-      * .pagina-sobre-mi main {
-        height: auto; }
-        * .pagina-sobre-mi main h1 {
-          top: 18rem;
-          left: 37rem;
-          text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8); }
-        * .pagina-sobre-mi main p {
-          top: 28rem;
-          left: 30rem;
-          width: 30rem;
-          text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8); }
-        * .pagina-sobre-mi main .img-principal {
-          height: 100vh; }
-      * .pagina-sobre-mi .descripcion p {
-        margin-top: 1rem;
-        width: 50rem; }
-      * .pagina-sobre-mi .galeria h2 {
-        text-align: center; }
-      * .pagina-sobre-mi .galeria div {
-        margin-left: .2rem;
-        width: 90%; }
-        * .pagina-sobre-mi .galeria div .img1-2 {
-          width: 25rem; }
-        * .pagina-sobre-mi .galeria div .img3-4 {
-          width: 25rem; }
-        * .pagina-sobre-mi .galeria div .img5-6 {
-          width: 25rem; }
-      * .pagina-sobre-mi footer {
-        flex-direction: row;
-        justify-content: center; }
-        * .pagina-sobre-mi footer h3 {
-          margin: .5rem; }
-      * .html-experiencia main h1 {
-        top: 18rem;
-        left: 34.5rem;
-        text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8); }
-      * .html-experiencia main p {
-        top: 28rem;
-        left: 27rem;
-        width: 30rem;
-        text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8); }
-      * .html-experiencia main img {
-        height: 100vh; }
-      * .html-experiencia .experiencia-Uno {
-        flex-direction: row;
-        justify-content: space-around; }
-        * .html-experiencia .experiencia-Uno h2 {
-          font-weight: bold;
-          padding-bottom: 10rem; }
-        * .html-experiencia .experiencia-Uno .parrafo {
-          display: flex;
-          flex-direction: column;
-          width: 30rem; }
-        * .html-experiencia .experiencia-Uno div img {
-          width: 20rem;
-          border: 2px solid; }
-      * .html-experiencia .experiencia-Dos {
-        flex-direction: row;
-        justify-content: space-around; }
-        * .html-experiencia .experiencia-Dos h2 {
-          font-weight: bold;
-          padding-bottom: 10rem; }
-        * .html-experiencia .experiencia-Dos .parrafo {
-          display: flex;
-          flex-direction: column;
-          width: 30rem; }
-        * .html-experiencia .experiencia-Dos div img {
-          width: 20rem;
-          border: 2px solid; }
-      * .html-experiencia .redes-exp {
-        margin-top: 2rem; }
-      * .html-experiencia footer {
-        flex-direction: row;
-        justify-content: center; }
-        * .html-experiencia footer h3 {
-          margin: .5rem; }
-      * .pagina-proyectos main h1 {
-        top: 18rem;
-        left: 36rem; }
-      * .pagina-proyectos main p {
-        top: 28rem;
-        left: 28rem;
-        width: 30rem;
-        text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8); }
-      * .pagina-proyectos main img {
-        height: 100vh; }
-      * .pagina-proyectos .p-importantes {
-        flex-direction: row;
-        align-items: baseline;
+      * .home main .btn-container {
+        left: 24rem; }
+      * .home .sobre-mi {
         position: relative;
-        height: 24rem; }
-        * .pagina-proyectos .p-importantes h2 {
-          margin-top: 2rem;
+        align-items: baseline; }
+        * .home .sobre-mi h4 {
+          margin-top: 3rem;
+          margin-bottom: 1rem;
           margin-left: 5rem; }
-        * .pagina-proyectos .p-importantes p {
+        * .home .sobre-mi div img {
+          top: 2rem;
           position: absolute;
-          top: 8rem;
-          left: 8rem;
-          width: 30rem; }
-        * .pagina-proyectos .p-importantes .img-proyectos-importantes {
+          right: 2rem; }
+        * .home .sobre-mi p {
+          width: 30rem;
+          margin-left: 6rem; }
+        * .home .sobre-mi div {
+          margin-left: 6rem; }
+      * .home .experiencia {
+        display: grid;
+        grid-template-areas: "h3" "p" "ul"; }
+        * .home .experiencia h4 {
+          grid-area: h3;
+          margin-left: 5rem; }
+        * .home .experiencia p {
+          grid-area: p;
+          width: 45rem;
+          margin-left: 7rem; }
+        * .home .experiencia ul {
+          grid-area: ul;
+          width: 45rem;
+          margin-left: 7rem; }
+      * .home .proyectos {
+        position: relative;
+        align-items: baseline;
+        height: 30rem; }
+        * .home .proyectos h4 {
+          padding-left: 5rem; }
+          * .home .proyectos h4 span {
+            color: yellowgreen; }
+        * .home .proyectos h5 {
           position: absolute;
-          right: 5rem;
-          width: 30rem; }
-        * .pagina-proyectos .p-importantes .btn-proyectos-importantes {
-          top: 14rem;
+          top: 5rem;
+          margin-left: 6rem; }
+        * .home .proyectos p {
+          width: 20rem;
+          top: 6rem;
           left: 8rem;
           position: absolute; }
-      * .pagina-proyectos .otros-proyectos div .imp1 {
+        * .home .proyectos .carousel {
+          margin-left: 30rem;
+          width: 25rem; }
+          * .home .proyectos .carousel .d-block {
+            height: auto;
+            width: auto; }
+          * .home .proyectos .carousel .image1 {
+            height: auto;
+            width: auto; }
+        * .home .proyectos .btn-ver-proyectos {
+          position: absolute;
+          top: 15rem;
+          left: 8rem; }
+        * .home .proyectos .btn-ver-mas-proyectos {
+          display: block;
+          border: 2px solid yellowgreen;
+          position: absolute;
+          top: 24rem;
+          left: 25rem;
+          margin-bottom: 3rem; }
+      * .home .contactame h4 {
+        margin-top: 1rem; }
+      * .home .contactame p {
+        width: 50rem;
+        margin-top: 1rem; }
+      * .home .contactame .btn-contactame {
+        margin-top: 1rem; }
+      * .home footer {
+        flex-direction: row;
+        justify-content: center; }
+        * .home footer h3 {
+          margin: .5rem; }
+    * .pagina-sobre-mi main h1 {
+      top: 16rem;
+      left: 20rem;
+      text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8); }
+    * .pagina-sobre-mi .descripcion p {
+      margin-top: 1rem;
+      width: 40rem; }
+    * .pagina-sobre-mi .galeria h2 {
+      text-align: center; }
+    * .pagina-sobre-mi .galeria div {
+      margin-left: 1rem;
+      width: 45rem; }
+      * .pagina-sobre-mi .galeria div .img1-2 {
+        width: 13rem; }
+      * .pagina-sobre-mi .galeria div .img3-4 {
+        width: 13rem; }
+      * .pagina-sobre-mi .galeria div .img5-6 {
+        width: 13rem; }
+    * .pagina-sobre-mi footer {
+      flex-direction: row;
+      justify-content: center; }
+      * .pagina-sobre-mi footer h3 {
+        margin: .5rem; }
+    * .html-experiencia main h1 {
+      top: 12rem;
+      left: 20rem;
+      text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8); }
+    * .html-experiencia main p {
+      top: 18rem;
+      left: 11rem;
+      width: 30rem;
+      text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8); }
+    * .html-experiencia .experiencia-Uno {
+      align-items: baseline; }
+      * .html-experiencia .experiencia-Uno h2 {
+        font-weight: bold;
+        margin-left: 3rem; }
+      * .html-experiencia .experiencia-Uno .parrafo {
+        display: flex;
+        flex-direction: column;
+        width: 34rem;
+        margin-left: 7rem; }
+      * .html-experiencia .experiencia-Uno div img {
+        width: 20rem;
+        border: 2px solid;
+        margin-left: 14rem; }
+    * .html-experiencia .experiencia-Dos {
+      align-items: baseline; }
+      * .html-experiencia .experiencia-Dos h2 {
+        font-weight: bold;
+        margin-left: 3rem; }
+      * .html-experiencia .experiencia-Dos .parrafo {
+        display: flex;
+        flex-direction: column;
+        width: 34rem;
+        margin-left: 7rem; }
+      * .html-experiencia .experiencia-Dos div img {
+        width: 20rem;
+        border: 2px solid;
+        margin-left: 14rem; }
+    * .html-experiencia .redes-exp {
+      margin-top: 2rem; }
+    * .html-experiencia footer {
+      flex-direction: row;
+      justify-content: center; }
+      * .html-experiencia footer h3 {
+        margin: .5rem; }
+    * .pagina-proyectos main h1 {
+      top: 12rem;
+      left: 20rem; }
+    * .pagina-proyectos main p {
+      top: 18rem;
+      left: 15rem;
+      width: 20rem; }
+    * .pagina-proyectos .p-importantes h2 {
+      margin-top: 2rem; }
+    * .pagina-proyectos .p-importantes p {
+      margin-top: 1rem;
+      width: 25rem; }
+    * .pagina-proyectos .p-importantes div img {
+      border: 1px solid;
+      width: 25rem;
+      height: auto; }
+    * .pagina-proyectos .p-importantes div a {
+      margin-top: 1rem;
+      color: black; }
+    * .pagina-proyectos .otros-proyectos h2 {
+      margin-top: 4rem; }
+    * .pagina-proyectos .otros-proyectos h3 {
+      margin-top: 1rem; }
+    * .pagina-proyectos .otros-proyectos div .imp1 {
+      flex-direction: row;
+      width: 40rem; }
+      * .pagina-proyectos .otros-proyectos div .imp1 .card {
+        margin: 1rem;
+        display: flex;
+        align-items: center; }
+    * .pagina-proyectos .otros-proyectos div .imp2 {
+      display: block;
+      display: flex;
+      flex-direction: row;
+      width: 40rem; }
+      * .pagina-proyectos .otros-proyectos div .imp2 .card {
+        margin: 1rem;
+        display: flex;
+        align-items: center; }
+    * .pagina-contacto main h1 {
+      top: 12rem;
+      left: 17rem; }
+    * .pagina-contacto main .btn-container-contacto {
+      top: 18rem;
+      left: 20rem; } }
+  @media screen and (min-width: 1024px) {
+    * .home {
+      grid-template-areas: "header header header header" "main main main main" "part1 part1 part1 part1" "part2 part2 part2 part2" "part3 part3 part3 part3" "part4 part4 part4 part4" "part5 part5 part5 part5" "footer footer footer footer"; }
+      * .home main h1 {
+        left: 35rem;
+        text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8); }
+      * .home main .p-principal {
+        left: 30rem;
+        text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8); }
+      * .home main .p2-principal {
+        left: 27rem;
+        text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8); }
+      * .home main .img-principal {
+        height: 100vh; }
+      * .home main .btn-container {
+        left: 35rem; }
+      * .home .sobre-mi {
+        position: relative;
+        align-items: baseline; }
+        * .home .sobre-mi h4 {
+          margin-top: 3rem;
+          margin-bottom: 1rem;
+          margin-left: 18rem; }
+        * .home .sobre-mi div img {
+          top: 2rem;
+          position: absolute;
+          right: 15rem; }
+        * .home .sobre-mi p {
+          width: 30%;
+          margin-left: 21rem; }
+        * .home .sobre-mi div {
+          margin-left: 21rem; }
+      * .home .experiencia {
+        display: grid;
+        grid-template-areas: "h3" "p" "ul"; }
+        * .home .experiencia h4 {
+          grid-area: h3;
+          margin-left: 20rem; }
+        * .home .experiencia p {
+          grid-area: p;
+          width: 45rem;
+          margin-left: 24rem; }
+        * .home .experiencia ul {
+          grid-area: ul;
+          width: 45rem;
+          margin-left: 24rem; }
+      * .home .proyectos {
+        position: relative;
+        align-items: baseline;
+        height: 30rem; }
+        * .home .proyectos h4 {
+          padding-left: 15rem; }
+          * .home .proyectos h4 span {
+            color: yellowgreen; }
+        * .home .proyectos h5 {
+          position: absolute;
+          top: 5rem;
+          margin-left: 20rem; }
+        * .home .proyectos p {
+          width: 20rem;
+          top: 6rem;
+          left: 22rem;
+          position: absolute; }
+        * .home .proyectos .carousel {
+          margin-left: 45rem;
+          width: 25rem; }
+          * .home .proyectos .carousel .d-block {
+            height: auto;
+            width: auto; }
+          * .home .proyectos .carousel .image1 {
+            height: auto;
+            width: auto; }
+        * .home .proyectos .btn-ver-proyectos {
+          position: absolute;
+          top: 15rem;
+          left: 21rem; }
+        * .home .proyectos .btn-ver-mas-proyectos {
+          display: block;
+          border: 2px solid yellowgreen;
+          position: absolute;
+          top: 24rem;
+          left: 45rem;
+          margin-bottom: 3rem; }
+      * .home .contactame h4 {
+        margin-top: 1rem; }
+      * .home .contactame p {
+        width: 50rem;
+        margin-top: 1rem; }
+      * .home .contactame .btn-contactame {
+        margin-top: 1rem; }
+      * .home footer {
+        flex-direction: row;
+        justify-content: center; }
+        * .home footer h3 {
+          margin: .5rem; }
+    * .pagina-sobre-mi main {
+      height: auto; }
+      * .pagina-sobre-mi main h1 {
+        top: 18rem;
+        left: 37rem;
+        text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8); }
+      * .pagina-sobre-mi main p {
+        top: 28rem;
+        left: 30rem;
+        width: 30rem;
+        text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8); }
+      * .pagina-sobre-mi main .img-principal {
+        height: 100vh; }
+    * .pagina-sobre-mi .descripcion p {
+      margin-top: 1rem;
+      width: 50rem; }
+    * .pagina-sobre-mi .galeria h2 {
+      text-align: center; }
+    * .pagina-sobre-mi .galeria div {
+      margin-left: .2rem;
+      width: 90%; }
+      * .pagina-sobre-mi .galeria div .img1-2 {
+        width: 25rem; }
+      * .pagina-sobre-mi .galeria div .img3-4 {
+        width: 25rem; }
+      * .pagina-sobre-mi .galeria div .img5-6 {
+        width: 25rem; }
+    * .pagina-sobre-mi footer {
+      flex-direction: row;
+      justify-content: center; }
+      * .pagina-sobre-mi footer h3 {
+        margin: .5rem; }
+    * .html-experiencia main h1 {
+      top: 18rem;
+      left: 34.5rem;
+      text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8); }
+    * .html-experiencia main p {
+      top: 28rem;
+      left: 27rem;
+      width: 30rem;
+      text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8); }
+    * .html-experiencia main img {
+      height: 100vh; }
+    * .html-experiencia .experiencia-Uno {
+      position: relative;
+      flex-direction: row; }
+      * .html-experiencia .experiencia-Uno h2 {
+        position: relative;
+        font-weight: bold;
+        margin-left: 5rem; }
+      * .html-experiencia .experiencia-Uno .parrafo {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 30rem;
+        margin-left: 9rem; }
+      * .html-experiencia .experiencia-Uno div {
+        position: absolute;
+        right: 5rem; }
+        * .html-experiencia .experiencia-Uno div img {
+          width: 20rem;
+          border: 2px solid; }
+    * .html-experiencia .experiencia-Dos {
+      position: relative;
+      flex-direction: row; }
+      * .html-experiencia .experiencia-Dos h2 {
+        position: relative;
+        font-weight: bold;
+        margin-left: 5rem; }
+      * .html-experiencia .experiencia-Dos .parrafo {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 30rem;
+        margin-left: 9rem; }
+      * .html-experiencia .experiencia-Dos div {
+        position: absolute;
+        right: 5rem; }
+        * .html-experiencia .experiencia-Dos div img {
+          width: 20rem;
+          border: 2px solid; }
+    * .html-experiencia .redes-exp {
+      margin-top: 2rem; }
+    * .html-experiencia footer {
+      flex-direction: row;
+      justify-content: center; }
+      * .html-experiencia footer h3 {
+        margin: .5rem; }
+    * .pagina-proyectos main h1 {
+      top: 18rem;
+      left: 36rem; }
+    * .pagina-proyectos main p {
+      top: 28rem;
+      left: 28rem;
+      width: 30rem;
+      text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8); }
+    * .pagina-proyectos main img {
+      height: 100vh; }
+    * .pagina-proyectos .p-importantes {
+      flex-direction: row;
+      align-items: baseline;
+      position: relative;
+      height: 24rem; }
+      * .pagina-proyectos .p-importantes h2 {
+        margin-top: 2rem;
+        margin-left: 5rem; }
+      * .pagina-proyectos .p-importantes p {
+        position: absolute;
+        top: 8rem;
+        left: 8rem;
+        width: 30rem; }
+      * .pagina-proyectos .p-importantes .img-proyectos-importantes {
+        position: absolute;
+        right: 5rem;
+        width: 30rem; }
+      * .pagina-proyectos .p-importantes .btn-proyectos-importantes {
+        top: 14rem;
+        left: 8rem;
+        position: absolute; }
+    * .pagina-proyectos .otros-proyectos div .imp1 {
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+    * .pagina-proyectos .otros-proyectos div {
+      display: block; }
+      * .pagina-proyectos .otros-proyectos div .imp2 {
         display: flex;
         flex-direction: row;
         align-items: center; }
-      * .pagina-proyectos .otros-proyectos div {
-        display: block; }
-        * .pagina-proyectos .otros-proyectos div .imp2 {
-          display: flex;
-          flex-direction: row;
-          align-items: center; }
-      * .pagina-proyectos footer {
-        flex-direction: row;
-        justify-content: center; }
-        * .pagina-proyectos footer h3 {
-          margin: .5rem; }
-      * .pagina-contacto main h1 {
-        top: 18rem;
-        left: 34rem; }
-      * .pagina-contacto main div img {
-        height: 100vh; }
-      * .pagina-contacto main .btn-container-contacto {
-        top: 28rem;
-        left: 38rem; }
-      * .pagina-contacto .section-social h2 {
-        margin-top: 4rem;
-        text-align: center; }
-      * .pagina-contacto .section-social .redes1 {
-        margin-top: 1rem; }
-        * .pagina-contacto .section-social .redes1 .bi-instagram {
-          font-size: xx-large;
-          margin: 1rem; }
-        * .pagina-contacto .section-social .redes1 .bi-github {
-          font-size: xx-large;
-          margin: 1rem; }
-        * .pagina-contacto .section-social .redes1 .bi-twitter {
-          font-size: xx-large;
-          margin: 1rem; }
-        * .pagina-contacto .section-social .redes1 .bi-linkedin {
-          font-size: xx-large;
-          margin: 1rem; }
-        * .pagina-contacto .section-social .redes1 .bi-facebook {
-          font-size: xx-large;
-          margin: 1rem; }
-      * .pagina-contacto .btn-enviar {
-        border: 2px solid #9acd32;
-        width: 6rem;
-        background-color: #9acd32; }
-      * .pagina-contacto footer {
-        flex-direction: row;
-        justify-content: center; }
-        * .pagina-contacto footer h3 {
-          margin: .5rem; } }
+    * .pagina-proyectos footer {
+      flex-direction: row;
+      justify-content: center; }
+      * .pagina-proyectos footer h3 {
+        margin: .5rem; }
+    * .pagina-contacto main h1 {
+      top: 18rem;
+      left: 34rem; }
+    * .pagina-contacto main div img {
+      height: 100vh; }
+    * .pagina-contacto main .btn-container-contacto {
+      top: 28rem;
+      left: 38rem; }
+    * .pagina-contacto .section-social h2 {
+      margin-top: 4rem;
+      text-align: center; }
+    * .pagina-contacto .section-social .redes1 {
+      margin-top: 1rem; }
+      * .pagina-contacto .section-social .redes1 .bi-instagram {
+        font-size: xx-large;
+        margin: 1rem; }
+      * .pagina-contacto .section-social .redes1 .bi-github {
+        font-size: xx-large;
+        margin: 1rem; }
+      * .pagina-contacto .section-social .redes1 .bi-twitter {
+        font-size: xx-large;
+        margin: 1rem; }
+      * .pagina-contacto .section-social .redes1 .bi-linkedin {
+        font-size: xx-large;
+        margin: 1rem; }
+      * .pagina-contacto .section-social .redes1 .bi-facebook {
+        font-size: xx-large;
+        margin: 1rem; }
+    * .pagina-contacto .btn-enviar {
+      border: 2px solid #9acd32;
+      width: 6rem;
+      background-color: #9acd32; }
+    * .pagina-contacto footer {
+      flex-direction: row;
+      justify-content: center; }
+      * .pagina-contacto footer h3 {
+        margin: .5rem; } }

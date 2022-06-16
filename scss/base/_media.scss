@@ -1,8 +1,7 @@
 
 @mixin mediaqueri-1024px {
     @media screen and (min-width:1024px) {
-    /* PAGINA INDEX */
-    /* contenedor de la home */
+// ------  PAGINA DE INICIO ------ 
     .home {
         grid-template-areas: 
         "header header header header"
@@ -13,6 +12,7 @@
         "part4 part4 part4 part4"
         "part5 part5 part5 part5"
         "footer footer footer footer";
+  // ------  seccion main ------ 
         main {
             h1 {
                 left: 35rem;
@@ -34,7 +34,7 @@
             }
            
         }
-        // seccion sobre mi
+  // ------  seccion sobre mi ------ 
         .sobre-mi {
             position: relative;
             align-items: baseline;
@@ -58,7 +58,7 @@
                 margin-left: 21rem;
             }
         }
-        // seccion experiencia 
+  // ------  seccion experiencia ------ 
         .experiencia {
             display: grid;
             grid-template-areas: 
@@ -80,7 +80,7 @@
                 margin-left: 24rem;
             }
         }
-        // seccion proyectos 
+  // ------  seccion proyectos ------ 
         .proyectos {
             position: relative;
             align-items: baseline;
@@ -88,7 +88,7 @@
             h4 {
                 padding-left: 15rem;
                 span {
-                    color: yellowgreen; // se repite
+                    color: yellowgreen; 
                 }
             }
             h5 {
@@ -129,7 +129,7 @@
                 margin-bottom: 3rem;
             }
         } 
-        // seccion contactame 
+  // ------  seccion contactame ------ 
         .contactame { 
             h4 {
                margin-top: 1rem;
@@ -142,7 +142,7 @@
                 margin-top: 1rem;
             }
         }
-
+  // ------  seccion footer ------ 
         footer {
             flex-direction: row;
             justify-content: center;
@@ -150,13 +150,12 @@
                 margin: .5rem;
             }
         }
-       
-
-        
-    
     }
-    /* -------------- PAGINA SOBRE MI -------------- */
+
+
+// ------  PAGINA SOBRE MI ------ 
     .pagina-sobre-mi {
+  // ------  seccion main ------ 
         main {
             h1 {
                 top: 18rem;
@@ -173,14 +172,14 @@
             }
             height: auto;
         }
-        // seccion descrpcion 
+  // ------  seccion descripcion ------  
         .descripcion {
             p {
                 margin-top: 1rem;
                 width: 50rem;
             } 
         }
-        //galeria
+  // ------  seccion galeria ------ 
         .galeria {
             h2 {
                    text-align: center;
@@ -199,7 +198,7 @@
                 }        
             }
         }
-
+  // ------  seccion footer ------ 
         footer {
             flex-direction: row;
             justify-content: center;
@@ -207,9 +206,12 @@
                 margin: .5rem;
             }
         }
-    }   
-    /* ------  HTML EXPERIENCIA ------ */
+    }
+
+
+// ------  PAGINA EXPERIENCIA ------
     .html-experiencia {
+  // ------  seccion main ------ 
         main {
             h1 {
                 top: 18rem;
@@ -226,52 +228,61 @@
                 height: 100vh;
             }
         }
-        // seccion exp1 
+  // ------  seccion experiencia uno ------  
         .experiencia-Uno {
+            position: relative;
             flex-direction: row;
-            justify-content: space-around;
             h2 {
+                position: relative;
                 font-weight: bold;
-                padding-bottom: 10rem;
+                margin-left: 5rem;
             }
             .parrafo {
+                position: relative;
                 display: flex;
                 flex-direction: column;
                 width: 30rem;
+                margin-left: 9rem;
             }
             div {
+                position: absolute;
+                right: 5rem;
                 img {
                     width: 20rem;
                     border: 2px solid;
                 }
             }
         }
-
-        // seccion exp2 
+  // ------  seccion experiencia dos ------ 
         .experiencia-Dos {
+            position: relative;
             flex-direction: row;
-            justify-content: space-around;
             h2 {
+                position: relative;
                 font-weight: bold;
-                padding-bottom: 10rem;
+                margin-left: 5rem;
             }
             .parrafo {
+                position: relative;
                 display: flex;
                 flex-direction: column;
                 width: 30rem;
+                margin-left: 9rem;
             }
             div {
+                position: absolute;
+                right: 5rem;
                 img {
                     width: 20rem;
                     border: 2px solid;
                 }
             }
         }
-
+  // ------  seccion redes sociales ------ 
         .redes-exp {
             margin-top: 2rem;
         }
-
+  // ------  seccion footer ------ 
         footer {
             flex-direction: row;
             justify-content: center;
@@ -281,23 +292,27 @@
         }
             
     }
-    /* PAGINA PROYECTO */
+
+
+// ------  PAGINA PROYECTOS ------
     .pagina-proyectos {
+  // ------  seccion main ------ 
         main {
             h1 {
                 top: 18rem;
                 left: 36rem;
             }
             p {
-            top: 28rem;
-            left: 28rem;
-            width: 30rem;
-            text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+                top: 28rem;
+                left: 28rem;
+                width: 30rem;
+                text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
             }
             img {
                 height: 100vh;
             }
         }
+  // ------  seccion proyectos importantes ------ 
         .p-importantes {    
             flex-direction: row;
             align-items: baseline;
@@ -324,6 +339,7 @@
                 position: absolute;
             }
         }
+  // ------  seccion otros proyectos ------ 
         .otros-proyectos {
             div {
                 .imp1 {
@@ -341,6 +357,7 @@
                 }            
             }
         }
+  // ------  seccion footer ------ 
         footer {
             flex-direction: row;
             justify-content: center;
@@ -349,8 +366,11 @@
             }
         }
     }
-    /* ------  HTML CONTACTO ------ */ 
+
+
+// ------  HTML CONTACTO ------ 
     .pagina-contacto {
+  // ------  seccion main ------ 
         main {
             h1 {
                 top: 18rem;
@@ -366,8 +386,7 @@
                 left: 38rem;
             }
         }
-
-        // seccion social 
+  // ------  seccion redes sociales ------ 
         .section-social {
              h2 {
                 margin-top: 4rem;
@@ -398,12 +417,13 @@
                 }
             }        
         }
-        // seccion formulario 
+  // ------  seccion formulario ------ 
         .btn-enviar {
             border: 2px solid #9acd32;
             width: 6rem;  
             background-color: #9acd32;
         }
+  // ------  seccion footer ------ 
         footer {
             flex-direction: row;
             justify-content: center;
@@ -417,7 +437,7 @@
 
 @mixin tablet-768px {
     @media screen and (min-width:768px) {
-     // PAGINA INDEX 
+// ------  PAGINA INICIO ------
     .home {
         grid-template-areas: 
         "header header header"
@@ -428,6 +448,7 @@
         "part4 part4 part4"
         "part5 part5 part5"
         "footer footer footer";
+  // ------  seccion main ------
         main {
             h1 {
                 left: 24rem;
@@ -443,7 +464,7 @@
             }
            
         }
-        // seccion sobre mi
+  // ------  seccion sobre mi ------
         .sobre-mi {
             position: relative;
             align-items: baseline;
@@ -467,7 +488,7 @@
                 margin-left: 6rem;
             }
         }
-        // seccion experiencia 
+  // ------  seccion experiencia ------ 
         .experiencia {
             display: grid;
             grid-template-areas: 
@@ -489,7 +510,7 @@
                 margin-left: 7rem;
             }
         }
-        // seccion proyectos 
+  // ------  seccion proyectos ------ 
         .proyectos {
             position: relative;
             align-items: baseline;
@@ -538,7 +559,7 @@
                 margin-bottom: 3rem;
             }
         } 
-        // seccion contactame 
+  // ------  seccion contactame ------  
         .contactame { 
             h4 {
                margin-top: 1rem;
@@ -551,7 +572,7 @@
                 margin-top: 1rem;
             }
         }
-
+  // ------  seccion footer ------ 
         footer {
             flex-direction: row;
             justify-content: center;
@@ -559,9 +580,12 @@
                 margin: .5rem;
             }
         }
-    }  
-    //pagina sobremi
+    }
+
+
+// ------  PAGINA SOBRE MI ------
     .pagina-sobre-mi {
+  // ------  seccion main ------
         main {
             h1 {
                 top: 16rem;
@@ -569,14 +593,14 @@
                 text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
             }
         }
-        // seccion descrpcion 
+  // ------  seccion descripcion ------
         .descripcion {
             p {
                 margin-top: 1rem;
                 width: 40rem;
             } 
         }
-        //galeria
+  // ------  seccion galeria ------
         .galeria {
             h2 {
                    text-align: center;
@@ -595,7 +619,7 @@
                 }        
             }
         }
-
+  // ------  seccion footer ------
         footer {
             flex-direction: row;
             justify-content: center;
@@ -603,9 +627,12 @@
                 margin: .5rem;
             }
         }
-    }  
-    /* ------  HTML EXPERIENCIA ------ */
+    }
+
+
+// ------  PAGINA EXPERIENCIA ------
     .html-experiencia {
+  // ------  seccion main ------
         main {
             h1 {
                 top: 12rem;
@@ -619,7 +646,7 @@
                 text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
             }
         }
-        // seccion exp1 
+  // ------  seccion experiencia uno ------
         .experiencia-Uno {
             align-items: baseline;
             h2 {
@@ -640,8 +667,7 @@
                 }
             }
         }
-
-        // seccion exp2 
+  // ------  seccion experiencia dos ------
         .experiencia-Dos {
             align-items: baseline;
             h2 {
@@ -662,11 +688,11 @@
                 }
             }
         }
-
+  // ------  seccion redes sociales ------  
         .redes-exp {
             margin-top: 2rem;
         }
-
+  // ------  seccion footer ------
         footer {
             flex-direction: row;
             justify-content: center;
@@ -676,8 +702,11 @@
         }
             
     }
-    /* ------------ PAGINA PROYECTO -------------- */
+
+
+// ------  PAGINA PROYECTOS ------
     .pagina-proyectos {
+  // ------  seccion main ------
     main {
         h1 {
             top: 12rem;
@@ -689,7 +718,7 @@
             width: 20rem;
         }
     }
-// seccion Proyecto importante 
+  // ------  seccion proyecto importante ------
     .p-importantes {
         h2 {
             margin-top: 2rem;
@@ -712,7 +741,7 @@
             }
         }
     }
-    //  seccion otros-proyectos 
+  // ------  seccion otros proyectos ------
     .otros-proyectos {
         h2 {
             margin-top: 4rem;
@@ -745,10 +774,12 @@
             }            
         }
     }
-
     }
+
+
+// ------  PAGINA CONTACTO ------
     .pagina-contacto {
-        // seccion main 
+  // ------  seccion main ------
     main {
         h1 {
             top: 12rem;
@@ -760,7 +791,6 @@
         }
     }
     }
-
     }
 }
 

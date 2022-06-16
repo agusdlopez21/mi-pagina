@@ -5,5 +5,5 @@
 3 - agregue un alt y su descripcion a todas las imagenes de todas las paginas
 
 4 - agregue un titulo en el head en todas las paginas.
-
+ 
 5 - Agregue las etiquetas de encabezado respetando la especificidad en todas las paginas.
